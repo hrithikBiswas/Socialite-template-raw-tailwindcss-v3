@@ -61,7 +61,18 @@ const config = {
     },
     plugins: [
         new HtmlWebpackPlugin({
+            filename: 'index.html',
             template: './src/index.html',
+            chunks: ['main'],
+            inject: 'body',
+            minify: {
+                collapseWhitespace: true, // html minify method 02
+                removeComments: true,
+            },
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'login.html',
+            template: './src/login.html',
             inject: 'body',
             minify: {
                 collapseWhitespace: true, // html minify method 02

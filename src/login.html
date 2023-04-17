@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Socialite Template</title>
+</head>
+
+<body class="bg-gray-50">
+    <div class="flex h-screen flex-col justify-between">
+        <!-- HEADER -->
+        <div class="bg-white px-4 py-3 shadow lg:py-4">
+            <div class="mx-auto flex max-w-6xl items-center justify-between">
+                <a class="" href="#">
+                    <img class="w-32" src="./assets/images/logo.png" alt="logo" />
+                </a>
+                <div>
+                    <a href="#" class="mr-2 font-semibold capitalize text-gray-600 md:mr-5">login</a>
+                    <a href="#"
+                        class="rounded-md bg-purple-500 px-5 py-2 font-semibold text-gray-50 lg:py-2.5 lg:px-6 hover:text-gray-600">Register</a>
+                </div>
+            </div>
+        </div>
+        <!-- LOGIN FORM -->
+        <div class="p-6">
+            <div class="mx-auto max-w-lg rounded-md bg-white p-6 lg:p-10 shadow-lg">
+                <form action="" method="post">
+                    <h1 class="mb-6 text-xl font-bold text-gray-700">
+                        Login
+                    </h1>
+                    <div class="mb-2.5 flex flex-col">
+                        <label for="username" class="mb-2 text-gray-600/90">Username</label>
+                        <input name="username" class="h-11 rounded-md bg-gray-100 px-5 outline-none" type="text"
+                            placeholder="Username" />
+                    </div>
+                    <div class="mb-2.5 flex flex-col">
+                        <label for="email" class="mb-2 text-gray-600/90">Email Address</label>
+                        <input name="email" class="h-11 rounded-md bg-gray-100 px-5 outline-none" type="email"
+                            placeholder="info@exemple.com" />
+                    </div>
+                    <div class="mb-2.5 flex flex-col">
+                        <label for="password" class="mb-2 text-gray-600/90">Password</label>
+                        <input name="password" class="h-11 rounded-md bg-gray-100 px-5 outline-none" type="text"
+                            placeholder="******" />
+                    </div>
+                    <button type="submit"
+                        class="mt-5 w-full rounded-md bg-blue-600 p-1.5 text-lg font-semibold text-white">
+                        Login
+                    </button>
+                </form>
+            </div>
+        </div>
+        <!-- FOOTER -->
+        <div class="px-4">
+            <div
+                class="mx-auto flex max-w-6xl flex-col items-center gap-y-3 py-3 lg:mb-4 lg:flex-row lg:justify-between">
+                <ul class="flex gap-x-2.5 uppercase text-gray-700">
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">help</a></li>
+                    <li><a href="#">terms</a></li>
+                    <li><a href="#">privacy</a></li>
+                </ul>
+                <div class="text-gray-600">
+                    &#169; Copyright 2023 By Socialite
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
