@@ -79,6 +79,15 @@ const config = {
                 removeComments: true,
             },
         }),
+        new HtmlWebpackPlugin({
+            filename: 'register.html',
+            template: './src/register.html',
+            inject: 'body',
+            minify: {
+                collapseWhitespace: true, // html minify method 02
+                removeComments: true,
+            },
+        }),
         new MiniCssExtractPlugin({
             filename: './assets/css/style.bundle.css',
             chunkFilename: './css/[id].css',

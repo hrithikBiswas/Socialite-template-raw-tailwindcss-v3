@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Socialite - Login</title>
+    <title>Socialite - Register</title>
 </head>
 
 <body class="bg-gray-50">
@@ -23,13 +23,25 @@
                 </div>
             </div>
         </div>
-        <!-- LOGIN FORM -->
+        <!-- REGISTER FORM -->
         <div class="p-6">
             <div class="mx-auto max-w-lg rounded-md bg-white p-6 lg:p-10 shadow-lg">
                 <form action="" method="post" onsubmit="return false;">
                     <h1 class="mb-6 text-xl font-bold text-gray-700">
-                        Login
+                        Register
                     </h1>
+                    <div class="grid lg:grid-cols-2 lg:gap-x-4">
+                        <div class="mb-2.5 flex flex-col basis-1/2">
+                            <label for="firstname" class="mb-2 text-gray-600/90">First Name</label>
+                            <input name="firstname" class="h-11 rounded-md bg-gray-100 px-5 outline-none" type="text"
+                                placeholder="Your Name" />
+                        </div>
+                        <div class="mb-2.5 flex flex-col basis-1/2">
+                            <label for="lastname" class="mb-2 text-gray-600/90">Last Name</label>
+                            <input name="lastname" class="h-11 rounded-md bg-gray-100 px-5 outline-none" type="text"
+                                placeholder="Last Name" />
+                        </div>
+                    </div>
                     <div class="mb-2.5 flex flex-col">
                         <label for="username" class="mb-2 text-gray-600/90">Username</label>
                         <input name="username" class="h-11 rounded-md bg-gray-100 px-5 outline-none" type="text"
@@ -45,9 +57,29 @@
                         <input name="password" class="h-11 rounded-md bg-gray-100 px-5 outline-none" type="password"
                             placeholder="******" />
                     </div>
+                    <div class="grid lg:grid-cols-2 lg:gap-x-4">
+                        <div class="mb-2.5 flex flex-col w-full">
+                            <label for="gender" class="mb-2 text-gray-600/90">Gender</label>
+                            <select name="gender"
+                                class="h-11 w-full text-gray-600/90 rounded-md bg-gray-100 px-5 outline-none" id="">
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+                        </div>
+                        <div class="mb-2.5 flex flex-col w-full">
+                            <label for="phone" class="mb-2 text-gray-600/90">Phone: optional</label>
+                            <input type="number" name="phone"
+                                class="h-11 rounded-md bg-gray-100 px-5 outline-none appearance-none"
+                                placeholder="+88 01874400050" />
+                        </div>
+                    </div>
+                    <div class="mb-2 text-gray-600/90 flex gap-x-3 items-center">
+                        <input type="checkbox" id="right" class="checked:bg-purple-500 w-5 h-5 accent-blue-700" checked>
+                        <span>I agree to the Terms and Conditions</span>
+                    </div>
                     <button type="submit"
-                        class="mt-5 w-full rounded-md bg-blue-600 p-1.5 text-lg font-semibold text-white">
-                        Login
+                        class="mt-7 w-full rounded-md bg-blue-600 p-1.5 text-lg font-semibold text-white">
+                        Register
                     </button>
                 </form>
             </div>
