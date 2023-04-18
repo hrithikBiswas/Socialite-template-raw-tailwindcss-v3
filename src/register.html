@@ -9,72 +9,96 @@
 </head>
 
 <body class="bg-gray-50">
-    <div class="flex h-screen flex-col justify-between">
+    <div class="flex h-screen flex-col justify-between dark:bg-dark-background">
         <!-- HEADER -->
-        <div class="bg-white px-4 py-3 shadow lg:py-4">
+        <div class="transition duration-100 bg-white px-4 py-3 shadow lg:py-4 dark:bg-dark-foreground">
             <div class="mx-auto flex max-w-6xl items-center justify-between">
                 <a class="" href="#">
                     <img class="w-32" src="./assets/images/logo.png" alt="logo" />
                 </a>
-                <div>
-                    <a href="./login.html" class="mr-2 font-semibold capitalize text-gray-600 md:mr-5">login</a>
-                    <a href="./register.html"
-                        class="rounded-md bg-purple-500 px-5 py-2 font-semibold text-gray-50 lg:py-2.5 lg:px-6 hover:text-gray-600">Register</a>
+                <div class="flex items-center gap-x-2 md:gap-x-5">
+                    <button id="light-theme" class="theme group rounded-full p-1 ring-1 ring-gray-200 hover:bg-gray-50">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="h-6 w-6 text-gray-500 group-hover:text-gray-600 md:h-7 md:w-7">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
+                        </svg>
+                    </button>
+                    <button id="dark-theme"
+                        class="theme group hidden rounded-full p-1 shadow-md ring-1 ring-gray-700 hover:bg-gray-800">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="h-6 w-6 fill-gray-300 group-hover:fill-gray-100 md:h-7 md:w-7">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+                        </svg>
+                    </button>
+                    <!-- <a href="./login.html" class="font-semibold capitalize text-gray-600 dark:text-gray-300">login</a> -->
+                    <a href="./login.html"
+                        class="rounded-md bg-purple-500 px-5 py-2 font-semibold text-gray-50 hover:text-gray-600 lg:px-6 lg:py-2.5">Login</a>
                 </div>
             </div>
         </div>
         <!-- REGISTER FORM -->
-        <div class="p-6">
-            <div class="mx-auto max-w-lg rounded-md bg-white p-6 lg:p-10 shadow-lg">
+        <div class="p-6 dark:bg-dark-background">
+            <div
+                class="transition duration-100 mx-auto max-w-lg rounded-md bg-white p-6 lg:p-10 shadow-lg dark:bg-dark-foreground">
                 <form action="" method="post" onsubmit="return false;">
-                    <h1 class="mb-6 text-xl font-bold text-gray-700">
+                    <h1 class="mb-6 text-xl font-bold text-gray-700 dark:text-gray-100">
                         Register
                     </h1>
                     <div class="grid lg:grid-cols-2 lg:gap-x-4">
                         <div class="mb-2.5 flex flex-col basis-1/2">
-                            <label for="firstname" class="mb-2 text-gray-600/90">First Name</label>
-                            <input name="firstname" class="h-11 rounded-md bg-gray-100 px-5 outline-none" type="text"
-                                placeholder="Your Name" />
+                            <label for="firstname" class="mb-2 text-gray-600/90 dark:text-gray-300">First Name</label>
+                            <input name="firstname"
+                                class="h-11 rounded-md bg-gray-100 px-5 outline-none dark:bg-gray-800 dark:text-gray-300"
+                                type="text" placeholder="Your Name" />
                         </div>
                         <div class="mb-2.5 flex flex-col basis-1/2">
-                            <label for="lastname" class="mb-2 text-gray-600/90">Last Name</label>
-                            <input name="lastname" class="h-11 rounded-md bg-gray-100 px-5 outline-none" type="text"
-                                placeholder="Last Name" />
+                            <label for="lastname" class="mb-2 text-gray-600/90 dark:text-gray-300">Last Name</label>
+                            <input name="lastname"
+                                class="h-11 rounded-md bg-gray-100 px-5 outline-none dark:bg-gray-800 dark:text-gray-300"
+                                type="text" placeholder="Last Name" />
                         </div>
                     </div>
                     <div class="mb-2.5 flex flex-col">
-                        <label for="username" class="mb-2 text-gray-600/90">Username</label>
-                        <input name="username" class="h-11 rounded-md bg-gray-100 px-5 outline-none" type="text"
-                            placeholder="Username" />
+                        <label for="username" class="mb-2 text-gray-600/90 dark:text-gray-300">Username</label>
+                        <input name="username"
+                            class="h-11 rounded-md bg-gray-100 px-5 outline-none dark:bg-gray-800 dark:text-gray-300"
+                            type="text" placeholder="Username" />
                     </div>
                     <div class="mb-2.5 flex flex-col">
-                        <label for="email" class="mb-2 text-gray-600/90">Email Address</label>
-                        <input name="email" class="h-11 rounded-md bg-gray-100 px-5 outline-none" type="email"
-                            placeholder="info@exemple.com" />
+                        <label for="email" class="mb-2 text-gray-600/90 dark:text-gray-300">Email Address</label>
+                        <input name="email"
+                            class="h-11 rounded-md bg-gray-100 px-5 outline-none dark:bg-gray-800 dark:text-gray-300"
+                            type="email" placeholder="info@exemple.com" />
                     </div>
                     <div class="mb-2.5 flex flex-col">
-                        <label for="password" class="mb-2 text-gray-600/90">Password</label>
-                        <input name="password" class="h-11 rounded-md bg-gray-100 px-5 outline-none" type="password"
-                            placeholder="******" />
+                        <label for="password" class="mb-2 text-gray-600/90 dark:text-gray-300">Password</label>
+                        <input name="password"
+                            class="h-11 rounded-md bg-gray-100 px-5 outline-none dark:bg-gray-800 dark:text-gray-300"
+                            type="password" placeholder="******" />
                     </div>
                     <div class="grid lg:grid-cols-2 lg:gap-x-4">
                         <div class="mb-2.5 flex flex-col w-full">
-                            <label for="gender" class="mb-2 text-gray-600/90">Gender</label>
+                            <label for="gender" class="mb-2 text-gray-600/90 dark:text-gray-300">Gender</label>
                             <select name="gender"
-                                class="h-11 w-full text-gray-600/90 rounded-md bg-gray-100 px-5 outline-none" id="">
+                                class="h-11 w-full text-gray-600/90 rounded-md bg-gray-100 px-5 outline-none dark:bg-gray-800 dark:text-gray-300"
+                                id="">
                                 <option value="male">Male</option>
                                 <option value="female">Female</option>
                             </select>
                         </div>
                         <div class="mb-2.5 flex flex-col w-full">
-                            <label for="phone" class="mb-2 text-gray-600/90">Phone: optional</label>
+                            <label for="phone" class="mb-2 text-gray-600/90 dark:text-gray-300">Phone: optional</label>
                             <input type="number" name="phone"
-                                class="h-11 rounded-md bg-gray-100 px-5 outline-none appearance-none"
+                                class="h-11 rounded-md bg-gray-100 px-5 outline-none appearance-none dark:bg-gray-800 dark:text-gray-300"
                                 placeholder="+88 01874400050" />
                         </div>
                     </div>
-                    <div class="mb-2 text-gray-600/90 flex gap-x-3 items-center">
-                        <input type="checkbox" id="right" class="checked:bg-purple-500 w-5 h-5 accent-blue-700" checked>
+                    <div class="mb-2 text-gray-600/90 flex gap-x-3 items-center dark:text-gray-300">
+                        <input type="checkbox" id="right"
+                            class="checked:bg-purple-500 w-5 h-5 accent-blue-700 cursor-pointer dark:bg-gray-700"
+                            checked>
                         <span>I agree to the Terms and Conditions</span>
                     </div>
                     <button type="submit"
@@ -85,16 +109,16 @@
             </div>
         </div>
         <!-- FOOTER -->
-        <div class="px-4">
+        <div class="transition duration-100 px-4 dark:bg-dark-foreground">
             <div
-                class="mx-auto flex max-w-6xl flex-col items-center gap-y-3 py-3 lg:mb-4 lg:flex-row lg:justify-between">
-                <ul class="flex gap-x-2.5 uppercase text-gray-700">
+                class="mx-auto flex max-w-6xl flex-col items-center gap-y-1 py-3 lg:mb-4 lg:flex-row lg:justify-between">
+                <ul class="flex gap-x-2.5 uppercase text-gray-700 dark:text-gray-300">
                     <li><a href="#">about</a></li>
                     <li><a href="#">help</a></li>
                     <li><a href="#">terms</a></li>
                     <li><a href="#">privacy</a></li>
                 </ul>
-                <div class="text-gray-600">
+                <div class="text-gray-600 dark:text-gray-300">
                     &#169; Copyright 2023 By Socialite
                 </div>
             </div>
