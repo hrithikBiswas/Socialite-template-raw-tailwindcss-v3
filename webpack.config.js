@@ -5,10 +5,13 @@ const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 
 const config = {
-    entry: './src/assets/js/index.js',
+    entry: {
+        main: './src/assets/js/index.js',
+        fontAwesome: './src/assets/js/font-awesome.js',
+    },
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: './assets/js/index.bundle.js',
+        filename: './assets/js/[name].bundle.js',
         assetModuleFilename: './assets/[base]', // or => assetModuleFilename: './assets/uploads/[name][ext]'
         clean: true,
     },
@@ -54,6 +57,13 @@ const config = {
                     filename: 'assets/video/[name][ext]',
                 },
             },
+            {
+                test: /\.(ttf|woff2)$/i,
+                type: 'asset/resource',
+                generator: {
+                    filename: 'assets/fonts/[name][ext]',
+                },
+            },
         ],
     },
     optimization: {
@@ -74,7 +84,6 @@ const config = {
         new HtmlWebpackPlugin({
             filename: 'index.html',
             template: './src/index.html',
-            chunks: ['main'],
             inject: 'body',
             minify: {
                 collapseWhitespace: true, // html minify method 02
@@ -100,7 +109,7 @@ const config = {
             },
         }),
         new MiniCssExtractPlugin({
-            filename: './assets/css/style.bundle.css',
+            filename: './assets/css/[name].bundle.css',
             chunkFilename: './css/[id].css',
         }),
     ],

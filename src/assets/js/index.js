@@ -1,6 +1,38 @@
 import '../css/styles.css';
 
 /**
+ *  SHOW SIDEBAR NAVIGATION MENU WHEN WINDOW SCREEN IS LESS THEN 1280PX
+ */
+const sidebarBtn = document.getElementById('sidebar-btn');
+const showSidebar = document.getElementById('asidebar');
+const aside = document.getElementById('aside');
+sidebarBtn.addEventListener('click', () => {
+    showSidebar.classList.remove('-left-72');
+    showSidebar.classList.add('left-0');
+    aside.classList.add('sidebar-dropshadow');
+});
+// WHEN THEN USER CLICKS ANYWHERE OUTSIDE OF THE SIDEBAR NAVIGATION, CLOSE IT
+window.onclick = function (event) {
+    if (event.target == aside) {
+        showSidebar.classList.remove('left-0');
+        showSidebar.classList.add('-left-72');
+        aside.classList.remove('sidebar-dropshadow');
+    }
+};
+
+/**
+ *  SHOW & HIDE SEARCH MODAL DEPEND ON FOCUSIN OR FOCUSOUT EVENTS
+ */
+const searchModal = document.getElementById('search-modal');
+const showSearchModal = document.getElementById('show-search-modal');
+searchModal.addEventListener('focusin', () => {
+    showSearchModal.classList.remove('hidden');
+});
+searchModal.addEventListener('focusout', () => {
+    showSearchModal.classList.add('hidden');
+});
+
+/**
  *  ENABLE DARK MODE
  */
 

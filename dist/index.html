@@ -1,1 +1,395 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Socialite Template</title><link href="./assets/css/style.bundle.css" rel="stylesheet"></head><body class="bg-gray-50"><a href="./login.html">login</a><script defer="defer" src="./assets/js/index.bundle.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Socialite Template</title>
+<link href="./assets/css/main.bundle.css" rel="stylesheet"><link href="./assets/css/fontAwesome.bundle.css" rel="stylesheet"></head>
+
+<body class="bg-gray-50">
+    <div id="wrapper">
+        
+        <header class="fixed left-0 right-0 top-0 bg-white shadow-sm lg:z-10">
+            <div class="flex items-center justify-between px-7 py-3.5 lg:px-8 lg:py-3">
+                <div class="flex gap-x-4 outline-none">
+                    <button id="sidebar-btn" class="xl:hidden">
+                        <i class="fa-solid fa-bars fa-xl text-gray-400 hover:text-gray-500"></i>
+                    </button>
+                    <a href="#">
+                        <img src="assets/img/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="hidden lg:block">
+                    <label class="relative block">
+                        <div>
+                            <span class="sr-only">Search</span>
+                            <span class="absolute inset-y-0 left-0 flex items-center pl-4">
+                                <i class="fa-solid fa-search h-7 w-7 text-slate-500 !flex items-center">
+                            </i></span>
+                            <input id="search-modal" class="placeholder:text-slate-400 block w-[544px] bg-gray-100 rounded-3xl py-2.5 pl-10 pr-8 text-gray-600 shadow-sm outline-none" placeholder="Search for Friends, Videos and more.." type="text" name="search" autocomplete="off">
+                        </div>
+                        <div id="show-search-modal" class="absolute hidden bg-white shadow-md w-full rounded-md ring-1 ring-gray-100">
+                            <h1 class="my-3 pl-4 text-xl font-semibold text-gray-700">
+                                Recently
+                            </h1>
+                            <ul class="px-3 pb-2.5">
+                                <li class="rounded-lg px-2 py-1.5 hover:bg-gray-100">
+                                    <a href="#" class="flex items-center gap-x-4 text-lg font-semibold text-gray-600/90">
+                                        <span class="">
+                                            <img src="assets/img/avatar-1.jpg" class="h-9 w-9 rounded-full" alt="">
+                                        </span>
+                                        <span>Dennis Han</span></a>
+                                </li>
+                                <li class="rounded-lg px-2 py-1.5 hover:bg-gray-100">
+                                    <a href="#" class="flex items-center gap-x-4 text-lg font-semibold text-gray-600/90">
+                                        <span class="">
+                                            <img src="assets/img/avatar-2.jpg" class="h-9 w-9 rounded-full" alt="">
+                                        </span>
+                                        <span>Scofeild</span></a>
+                                </li>
+                                <li class="rounded-lg px-2 py-1.5 hover:bg-gray-100">
+                                    <a href="#" class="flex items-center gap-x-4 text-lg font-semibold text-gray-600/90">
+                                        <span class="">
+                                            <img src="assets/img/avatar-3.jpg" class="h-9 w-9 rounded-full" alt="">
+                                        </span>
+                                        <span>Sara Trencati</span></a>
+                                </li>
+                                <li class="rounded-lg px-2 py-1.5 hover:bg-gray-100">
+                                    <a href="#" class="flex items-center gap-x-4 text-lg font-semibold text-gray-600/90">
+                                        <span class="">
+                                            <img src="assets/img/avatar-4.jpg" class="h-9 w-9 rounded-full" alt="">
+                                        </span>
+                                        <span>Alex Dara</span></a>
+                                </li>
+                                <li class="rounded-lg px-2 py-1.5 hover:bg-gray-100">
+                                    <a href="#" class="flex items-center gap-x-4 text-lg font-semibold text-gray-600/90">
+                                        <span class="">
+                                            <img src="assets/img/avatar-5.jpg" class="h-9 w-9 rounded-full" alt="">
+                                        </span>
+                                        <span>Erica Jones</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </label>
+                </div>
+                <div class="flex gap-x-6 lg:hidden">
+                    <button>
+                        <i class="fa-solid fa-magnifying-glass fa-lg" style="color: #adadad"></i>
+                    </button>
+                    <button>
+                        <i class="fa-solid fa-message fa-lg" style="color: #adadad"></i>
+                    </button>
+                </div>
+                <div class="fixed bottom-0 left-0 right-0 border-t-[1px] border-gray-200 px-7 py-2 lg:static lg:border-t-0 lg:px-0 lg:py-0">
+                    <ul class="flex justify-between lg:gap-x-3">
+                        <li class="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-gray-200/80 px-2 py-1.5">
+                            <i class="fa-solid fa-cart-shopping" style="color: #3f424b"></i>
+                        </li>
+                        <li class="badge flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-gray-200/80 px-2 py-1.5 after:content-['3']">
+                            <i class="fa-sharp fa-solid fa-bell" style="color: #3f424b"></i>
+                        </li>
+                        <li class="badge flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-gray-200/80 px-2 py-1.5 after:content-['4']">
+                            <i class="fa-solid fa-message" style="color: #3f424b"></i>
+                        </li>
+                        <li class="cursor-pointer">
+                            <img class="h-10 w-10 rounded-full" src="assets/img/avatar-2.jpg" alt="dp">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        
+        <aside id="aside" class="z-40">
+            <div id="asidebar" class="fixed -left-72 bottom-0 top-0 w-72 border-r-[1px] border-neutral-200 bg-white py-1 pr-1 transition-all duration-200 xl:left-0 xl:top-16 xl:bg-gray-50 xl:transition-none xl:duration-0">
+                <div class="aside-scroll h-full overflow-y-scroll px-2.5 py-1.5">
+                    <ul>
+                        <li class="my-1.5 rounded-lg bg-blue-100/50 px-4 py-2.5 hover:bg-gray-100">
+                            <a href="#" class="flex items-center gap-x-3 text-lg font-semibold text-blue-600"><i class="fa-solid fa-home !flex h-7 w-7 items-center text-[20px] text-blue-600"></i>
+                                <span>Feed</span></a>
+                        </li>
+                        <li class="rounded-lg px-4 py-2.5 hover:bg-gray-100">
+                            <a href="#" class="flex items-center gap-x-3 text-lg font-semibold text-gray-600/90">
+                                <i class="fa-solid fa-flag !flex h-7 w-7 items-center text-[20px] text-amber-500"></i>
+                                <span>Pages</span></a>
+                        </li>
+                        <li class="rounded-lg px-4 py-2.5 hover:bg-gray-100">
+                            <a href="#" class="flex items-center gap-x-3 text-lg font-semibold text-gray-600/90">
+                                <i class="fa-solid fa-film !flex h-7 w-7 items-center text-[20px] text-red-500"></i>
+                                <span>Videos</span></a>
+                        </li>
+                        <li class="rounded-lg px-4 py-2.5 hover:bg-gray-100">
+                            <a href="#" class="flex items-center gap-x-3 text-lg font-semibold text-gray-600/90">
+                                <i class="fa-solid fa-user-group !flex h-7 w-7 items-center text-[20px] text-blue-500"></i>
+                                <span>Groups</span></a>
+                        </li>
+                        <li class="rounded-lg px-4 py-2.5 hover:bg-gray-100">
+                            <a href="#" class="flex items-center gap-x-3 text-lg font-semibold text-gray-600/90">
+                                <i class="fa-solid fa-briefcase !flex h-7 w-7 items-center text-[20px] text-pink-500"></i>
+                                <span>Jobs</span></a>
+                        </li>
+                        <li class="rounded-lg px-4 py-2.5 hover:bg-gray-100">
+                            <a href="#" class="flex items-center gap-x-3 text-lg font-semibold text-gray-600/90">
+                                <i class="fa-solid fa-graduation-cap !flex h-7 w-7 items-center text-[20px] text-indigo-500"></i>
+                                <span>Course</span></a>
+                        </li>
+                        <li class="rounded-lg px-4 py-2.5 hover:bg-gray-100">
+                            <a href="#" class="flex items-center gap-x-3 text-lg font-semibold text-gray-600/90">
+                                <i class="fa-solid fa-gamepad !flex h-7 w-7 items-center text-[20px] text-emerald-500"></i>
+                                <span>Games</span></a>
+                        </li>
+                        <li class="rounded-lg px-4 py-2.5">
+                            <a href="#" class="flex items-center gap-x-3 text-base font-semibold text-gray-600/90">
+                                <i class="fa-solid fa-angle-down !flex h-5 w-5 items-center justify-center text-[16px] text-gray-600 bg-gray-100 rounded-full p-3.5"></i>
+                                <span>See More</span></a>
+                        </li>
+                    </ul>
+                    <div class="my-4 border-t-[1px] border-gray-200">
+                        <h1 class="my-3 pl-4 text-lg font-bold text-gray-700">
+                            Contacts
+                        </h1>
+                        <ul>
+                            <li class="rounded-lg px-4 py-2 hover:bg-gray-100">
+                                <a href="#" class="flex items-center gap-x-4 text-lg font-semibold text-gray-600/90">
+                                    <span class="active-status">
+                                        <img src="assets/img/avatar-1.jpg" class="h-9 w-9 rounded-full" alt="">
+                                    </span>
+                                    <span>Dennis Han</span></a>
+                            </li>
+                            <li class="rounded-lg px-4 py-2 hover:bg-gray-100">
+                                <a href="#" class="flex items-center gap-x-4 text-lg font-semibold text-gray-600/90">
+                                    <span class="active-status">
+                                        <img src="assets/img/avatar-2.jpg" class="h-9 w-9 rounded-full" alt="">
+                                    </span>
+                                    <span>Scofeild</span></a>
+                            </li>
+                            <li class="rounded-lg px-4 py-2 hover:bg-gray-100">
+                                <a href="#" class="flex items-center gap-x-4 text-lg font-semibold text-gray-600/90">
+                                    <span class="">
+                                        <img src="assets/img/avatar-7.jpg" class="h-9 w-9 rounded-full" alt="">
+                                    </span>
+                                    <span>Ms. Grechen</span></a>
+                            </li>
+                            <li class="rounded-lg px-4 py-2 hover:bg-gray-100">
+                                <a href="#" class="flex items-center gap-x-4 text-lg font-semibold text-gray-600/90">
+                                    <span class="">
+                                        <img src="assets/img/avatar-4.jpg" class="h-9 w-9 rounded-full" alt="">
+                                    </span>
+                                    <span>Alex Dara</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="my-4 border-t-[1px] border-gray-200">
+                        <h1 class="my-3 pl-4 text-lg font-bold text-gray-700">
+                            Pages
+                        </h1>
+                        <ul>
+                            <li class="rounded-lg px-4 py-2 hover:bg-gray-100">
+                                <a href="#" class="flex items-center justify-between text-lg font-semibold text-gray-600">
+                                    <div class="flex">
+                                        <i class="fa-solid fa-gear !flex h-8 w-8 items-center text-[20px] text-gray-500"></i>
+                                        <span>Settings</span>
+                                    </div>
+                                    <span><i class="fa-solid fa-angle-down text-gray-400"></i></span>
+                                </a>
+                            </li>
+                            <li class="rounded-lg px-4 py-2 hover:bg-gray-100">
+                                <a href="#" class="flex items-center justify-between text-lg font-semibold text-gray-600">
+                                    <div class="flex">
+                                        <i class="fa-solid fa-circle-info !flex h-8 w-8 items-center text-[20px] text-gray-500"></i>
+                                        <span>Info Pages</span>
+                                    </div>
+                                    <span><i class="fa-solid fa-angle-down text-gray-400"></i></span>
+                                </a>
+                            </li>
+                            <li class="rounded-lg px-4 py-2 hover:bg-gray-100">
+                                <a href="#" class="flex items-center justify-between text-lg font-semibold text-gray-600">
+                                    <div class="flex">
+                                        <i class="fa-solid fa-file !flex h-8 w-8 items-center text-[20px] text-gray-500"></i>
+                                        <span>Create Content</span>
+                                    </div>
+                                    <span><i class="fa-solid fa-angle-down text-gray-400"></i></span>
+                                </a>
+                            </li>
+                            <li class="rounded-lg px-4 py-2 hover:bg-gray-100">
+                                <a href="#" class="flex items-center justify-between text-lg font-semibold text-gray-600">
+                                    <div class="flex">
+                                        <i class="fa-solid fa-code !flex h-8 w-8 items-center text-[20px] text-gray-500"></i>
+                                        <span>Development</span>
+                                    </div>
+                                    <span><i class="fa-solid fa-angle-down text-gray-400"></i></span>
+                                </a>
+                            </li>
+                            <li class="rounded-lg px-4 py-2 hover:bg-gray-100">
+                                <a href="#" class="flex items-center justify-between text-lg font-semibold text-gray-600">
+                                    <div class="flex">
+                                        <i class="fa-solid fa-right-from-bracket !flex h-8 w-8 items-center text-[20px] text-gray-500"></i>
+                                        <span>Authentication</span>
+                                    </div>
+                                    <span><i class="fa-solid fa-angle-down text-gray-400"></i></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="flex flex-wrap px-3 gap-x-3 gap-y-1.5 text-gray-500 text-sm font-medium">
+                            <li><a class="hover:underline hover:text-gray-900" href="#">About</a></li>
+                            <li><a class="hover:underline hover:text-gray-900" href="#">Blog</a></li>
+                            <li><a class="hover:underline hover:text-gray-900" href="#">Support</a></li>
+                            <li><a class="hover:underline hover:text-gray-900" href="#">Contact Us</a></li>
+                            <li><a class="hover:underline hover:text-gray-900" href="#">Developer</a></li>
+                            <li><a class="hover:underline hover:text-gray-900" href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        
+        <div class="flex mt-[66px] py-6 px-4 xl:ml-72">
+            <div id="main-content" class="xl:max-w-[680px] xl:mx-auto">
+                
+                <div class="grid gap-x-2 grid-cols-3 md:grid-cols-5">
+                    <a href="#">
+                        <div class="relative h-[170px] rounded-xl">
+                            <img class="w-full h-full rounded-xl brightness-90 object-cover" src="assets/img/avatar-lg-1.jpg" alt="">
+                            <img class="absolute top-3 left-3 w-8 h-8 rounded-full ring-2 ring-white" src="assets/img/avatar-6.jpg" alt="">
+                            <h1 class="absolute bottom-2 left-3 text-base w-3/4 overflow-hidden whitespace-nowrap text-ellipsis font-semibold text-white">
+                                Erica Jones</h1>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="relative h-[170px] rounded-xl">
+                            <img class="w-full h-full rounded-xl brightness-90 object-cover" src="assets/img/avatar-lg-2.jpg" alt="">
+                            <img class="absolute top-3 left-3 w-8 h-8 rounded-full ring-2 ring-white" src="assets/img/avatar-2.jpg" alt="">
+                            <h1 class="absolute bottom-2 left-3 text-base w-3/4 overflow-hidden whitespace-nowrap text-ellipsis font-semibold text-white">
+                                Dennis Han</h1>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="relative h-[170px] rounded-xl">
+                            <img class="w-full h-full rounded-xl brightness-90 object-cover" src="assets/img/avatar-lg-3.jpg" alt="">
+                            <img class="absolute top-3 left-3 w-8 h-8 rounded-full ring-2 ring-white" src="assets/img/avatar-3.jpg" alt="">
+                            <h1 class="absolute bottom-2 left-3 text-base w-3/4 overflow-hidden whitespace-nowrap text-ellipsis font-semibold text-white">
+                                Alex Mohani</h1>
+                        </div>
+                    </a>
+                    <a class="hidden md:block" href="#">
+                        <div class="relative h-[170px] rounded-xl">
+                            <img class="w-full h-full rounded-xl brightness-90 object-cover" src="assets/img/avatar-lg-4.jpg" alt="">
+                            <img class="absolute top-3 left-3 w-8 h-8 rounded-full ring-2 ring-white" src="assets/img/avatar-4.jpg" alt="">
+                            <h1 class="absolute bottom-2 left-3 text-base w-3/4 overflow-hidden whitespace-nowrap text-ellipsis font-semibold text-white">
+                                Jonathan</h1>
+                        </div>
+                    </a>
+                    <a class="hidden md:block" href="#">
+                        <div class="relative h-[170px] rounded-xl">
+                            <img class="w-full h-full rounded-xl brightness-90 object-cover" src="assets/img/avatar-lg-5.jpg" alt="">
+                            <img class="absolute top-3 left-3 w-8 h-8 rounded-full ring-2 ring-white" src="assets/img/avatar-5.jpg" alt="">
+                            <h1 class="absolute bottom-2 left-3 text-base w-3/4 overflow-hidden whitespace-nowrap text-ellipsis font-semibold text-white">
+                                Stella Johnson</h1>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="py-3 px-4 my-7 rounded-lg shadow ring-1 bg-white ring-gray-200/30">
+                    <div class="flex gap-x-3">
+                        <img class="w-10 h-10 rounded-full" src="assets/img/avatar-2.jpg" alt="">
+                        <input type="text" class="bg-gray-100 w-full rounded-3xl text-gray-600 px-5 py-1.5 outline-none hover:bg-gray-200" placeholder="What's Your Mind? Hasme">
+                    </div>
+                    <div class="flex justify-between mt-3">
+                        <button class="rounded-md py-1 px-2 w-full text-left text-gray-600/90 text-sm sm:text-base font-medium hover:bg-gray-100">
+                            <span class="hidden md:inline-flex items-center justify-center mr-1 w-9 h-9 rounded-full bg-blue-100"><i class="fa-solid fa-image text-xl text-blue-600"></i></span>
+                            <span>Photo/video</span>
+                        </button>
+                        <button class="rounded-md py-1 w-full text-left px-2 text-gray-600/90 text-sm sm:text-base font-medium hover:bg-gray-100">
+                            <span class="hidden md:inline-flex items-center justify-center mr-1 w-9 h-9 rounded-full bg-green-100"><i class="fa-solid fa-user-plus text-xl text-green-600"></i></span>
+                            <span>Tag Friends</span>
+                        </button>
+                        <button class="rounded-md py-1 px-2 w-full text-left text-gray-600/90 text-sm sm:text-base font-medium hover:bg-gray-100">
+                            <span class="hidden md:inline-flex items-center justify-center mr-1 w-9 h-9 rounded-full bg-red-100"><i class="fa-solid fa-face-smile text-xl text-red-500"></i></span>
+                            <span>Feelings/Activity</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <div></div>
+            </div>
+
+            <div class="min-w-[260px] ml-10 hidden lg:block">
+                <div class="bg-white rounded-md shadow py-3 px-4 border-[1px] border-gray-100">
+                    <h3 class="font-semibold text-gray-700">Birthdays</h3>
+                    <div class="flex gap-x-3 pb-2.5 items-center mt-3 text-gray-500">
+                        <img class="w-9 h-9" src="assets/img/gift-icon.png" alt="gift-icon">
+                        <p><b>Jessica Erica</b> and <b>two others</b> have a Birthdays...</p>
+                    </div>
+                </div>
+                <div>
+                    <h1 class="my-4 text-xl font-semibold text-gray-800">
+                        Contacts
+                    </h1>
+                    <div>
+                        <div class="border-b-2 border-gray-200/60">
+                            <h1 class="inline-flex pb-3 pr-2 gap-x-2 items-center font-semibold text-lg text-indigo-700 border-b-2 border-indigo-700">
+                                Friends <span class="text-sm font-medium bg-blue-100 px-2 py-0.5 rounded-full">310</span>
+                            </h1>
+                        </div>
+                        <ul class="py-2.5">
+                            <li class="rounded-lg px-2 py-1.5 hover:bg-gray-100">
+                                <a href="#" class="flex items-center gap-x-4 text-lg font-semibold text-gray-600/90">
+                                    <span class="active-status">
+                                        <img src="assets/img/avatar-1.jpg" class="h-9 w-9 rounded-full" alt="">
+                                    </span>
+                                    <span>Dennis Han</span></a>
+                            </li>
+                            <li class="rounded-lg px-2 py-1.5 hover:bg-gray-100">
+                                <a href="#" class="flex items-center gap-x-4 text-lg font-semibold text-gray-600/90">
+                                    <span class="active-status">
+                                        <img src="assets/img/avatar-2.jpg" class="h-9 w-9 rounded-full" alt="">
+                                    </span>
+                                    <span>Scofeild</span></a>
+                            </li>
+                            <li class="rounded-lg px-2 py-1.5 hover:bg-gray-100">
+                                <a href="#" class="flex items-center gap-x-4 text-lg font-semibold text-gray-600/90">
+                                    <span class="">
+                                        <img src="assets/img/avatar-3.jpg" class="h-9 w-9 rounded-full" alt="">
+                                    </span>
+                                    <span>Sara Trencati</span></a>
+                            </li>
+                            <li class="rounded-lg px-2 py-1.5 hover:bg-gray-100">
+                                <a href="#" class="flex items-center gap-x-4 text-lg font-semibold text-gray-600/90">
+                                    <span class="active-status">
+                                        <img src="assets/img/avatar-4.jpg" class="h-9 w-9 rounded-full" alt="">
+                                    </span>
+                                    <span>Alex Dara</span></a>
+                            </li>
+                            <li class="rounded-lg px-2 py-1.5 hover:bg-gray-100">
+                                <a href="#" class="flex items-center gap-x-4 text-lg font-semibold text-gray-600/90">
+                                    <span class="">
+                                        <img src="assets/img/avatar-5.jpg" class="h-9 w-9 rounded-full" alt="">
+                                    </span>
+                                    <span>Erica Jones</span></a>
+                            </li>
+                            <li class="rounded-lg px-2 py-1.5 hover:bg-gray-100">
+                                <a href="#" class="flex items-center gap-x-4 text-lg font-semibold text-gray-600/90">
+                                    <span class="">
+                                        <img src="assets/img/avatar-7.jpg" class="h-9 w-9 rounded-full" alt="">
+                                    </span>
+                                    <span>Stella Johnson</span></a>
+                            </li>
+                            <li class="rounded-lg px-2 py-1.5 hover:bg-gray-100">
+                                <a href="#" class="flex items-center gap-x-4 text-lg font-semibold text-gray-600/90">
+                                    <span class="">
+                                        <img src="assets/img/avatar-6.jpg" class="h-9 w-9 rounded-full" alt="">
+                                    </span>
+                                    <span>Alex Dolgove</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script defer="defer" src="./assets/js/main.bundle.js"></script><script defer="defer" src="./assets/js/fontAwesome.bundle.js"></script></body>
+
+</html>
