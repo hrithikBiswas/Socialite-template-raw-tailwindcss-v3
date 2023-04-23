@@ -36,6 +36,7 @@ searchModal.addEventListener('focusout', () => {
  *  SHOW POST MODAL
  */
 const postModalInput = document.getElementById('post-modal-input');
+const postModalBtn = document.querySelectorAll('.post-modal-btn');
 const postModalShow = document.getElementById('post-modal-show');
 const exitModal = document.getElementById('exit-post-modal');
 const html = document.getElementsByTagName('html')[0];
@@ -44,6 +45,13 @@ postModalInput.addEventListener('focus', () => {
     postModalShow.classList.add('visible', 'opacity-100');
     html.classList.add('overflow-hidden');
 });
+for (let i = 0; i < postModalBtn.length; i++) {
+    postModalBtn[i].addEventListener('click', () => {
+        postModalShow.classList.remove('invisible', 'opacity-0');
+        postModalShow.classList.add('visible', 'opacity-100');
+        html.classList.add('overflow-hidden');
+    });
+}
 exitModal.addEventListener('click', () => {
     postModalShow.classList.remove('visible', 'opacity-100');
     postModalShow.classList.add('invisible', 'opacity-0');
