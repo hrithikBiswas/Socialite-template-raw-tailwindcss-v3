@@ -369,11 +369,11 @@
                         </div>
                     </a>
                 </div>
-                <!-- POST -->
+                <!-- CREATE POST -->
                 <div class="my-7 rounded-lg bg-white px-4 py-3 shadow ring-1 ring-gray-200/30">
                     <div class="flex gap-x-3">
                         <img class="h-10 w-10 rounded-full" src="./assets/images/avatar-2.jpg" alt="" />
-                        <input type="text"
+                        <input type="text" id="post-modal-input"
                             class="w-full rounded-3xl bg-gray-100 px-5 py-1.5 text-gray-600 outline-none hover:bg-gray-200"
                             placeholder="What's Your Mind? Hasme" />
                     </div>
@@ -401,6 +401,74 @@
                         </button>
                     </div>
                 </div>
+                <!-- CREATE POST MODAL -->
+                <div id="post-modal-show"
+                    class="invisible opacity-0 transition-all duration-200 fixed bottom-0 left-0 right-0 top-0 z-20 bg-neutral-200/70">
+                    <div
+                        class="absolute left-1/2 top-1/2 w-[260px] -translate-x-1/2 -translate-y-[55%] shadow-lg rounded-lg bg-white xs:w-[355px] sm:w-min">
+                        <div class="relative p-2 sm:py-3">
+                            <h1 class="text-center text-lg font-semibold text-gray-700">
+                                Create Post
+                            </h1>
+                            <button id="exit-post-modal"
+                                class="group absolute right-2 top-1.5 flex h-8 w-8 items-center justify-center rounded-full bg-gray-100 hover:bg-gray-200/70">
+                                <i class="fa-solid fa-xmark fa-lg text-gray-400 group-hover:text-gray-500/80"></i>
+                            </button>
+                        </div>
+                        <hr />
+                        <div class="flex gap-x-3 p-5">
+                            <img class="h-9 w-9 rounded-full" src="./assets/images/avatar-2.jpg" alt="" />
+                            <textarea class="mt-1 resize-none text-lg font-semibold text-gray-500 outline-none" name=""
+                                id="" cols="50" rows="5" placeholder="What's Your Mind? Stella!"></textarea>
+                        </div>
+                        <div
+                            class="mx-4 my-3 flex justify-center gap-x-2 rounded-xl border-[1px] bg-gray-50 p-0.5 sm:p-1">
+                            <button
+                                class="mr-1 flex h-9 w-9 items-center justify-center rounded-full bg-blue-100 md:inline-flex">
+                                <i class="fa-solid fa-image text-xl text-blue-600"></i>
+                            </button>
+                            <button
+                                class="mr-1 flex h-9 w-9 items-center justify-center rounded-full bg-red-100 md:inline-flex">
+                                <i class="fa-solid fa-film text-[20px] text-red-500"></i>
+                            </button>
+                            <button
+                                class="mr-1 flex h-9 w-9 items-center justify-center rounded-full bg-green-100 md:inline-flex">
+                                <i class="fa-solid fa-user-plus text-xl text-green-600"></i>
+                            </button>
+                            <button
+                                class="mr-1 flex h-9 w-9 items-center justify-center rounded-full bg-pink-100 md:inline-flex">
+                                <i class="fa-solid fa-location-dot text-xl text-pink-600"></i>
+                            </button>
+                            <button
+                                class="mr-1 flex h-9 w-9 items-center justify-center rounded-full hover:bg-gray-200 md:inline-flex">
+                                <i class="fa-solid fa-ellipsis fa-xl text-gray-500"></i>
+                            </button>
+                        </div>
+                        <hr />
+                        <div class="flex justify-between gap-x-1 px-3 py-4">
+                            <select name="privacy-post"
+                                class="rounded-lg border-[1px] p-0 font-semibold text-gray-500/70 outline-none xs:px-2 xs:py-1.5"
+                                id="">
+                                <option value="only me">Only Me</option>
+                                <option value="Every One">Every One</option>
+                                <option value="People I Follow">
+                                    People I Follow
+                                </option>
+                            </select>
+                            <div class="flex items-center gap-x-1 xs:gap-x-2">
+                                <button
+                                    class="rounded-md bg-rose-100 px-2 py-1 text-sm font-semibold text-rose-600 hover:bg-rose-200/70 xs:px-4 xs:py-2">
+                                    <i class="fa-solid fa-video !hidden xs:!inline"></i> Live
+                                </button>
+                                <button
+                                    class="rounded-md bg-blue-600 px-2 py-[2px] font-semibold text-white hover:bg-blue-700 xs:px-4 xs:py-1.5">
+                                    Share
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- POSTED CONTENT -->
                 <div>
                     <!-- Post 01 -->
