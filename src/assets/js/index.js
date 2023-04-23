@@ -61,29 +61,35 @@ exitModal.addEventListener('click', () => {
 /**
  *  POST SETTINGS MODAL
  */
-const postSetting = document.getElementById('post-setting');
-const postSettingModal = document.getElementById('post-setting-modal');
-postSetting.addEventListener('click', () => {
-    if (postSettingModal.classList.contains('invisible')) {
-        postSettingModal.classList.remove(
-            'invisible',
-            'opacity-0',
-            '-bottom-64'
-        );
-        postSettingModal.classList.add(
-            'visible',
-            'opacity-100',
-            '-bottom-[14.5rem]'
-        );
-    } else {
-        postSettingModal.classList.remove(
-            'visible',
-            'opacity-100',
-            '-bottom-[14.5rem]'
-        );
-        postSettingModal.classList.add('invisible', 'opacity-0', '-bottom-64');
-    }
-});
+const postSetting = document.querySelectorAll('.post-setting');
+const postSettingModal = document.querySelectorAll('.post-setting-modal');
+for (let i = 0; i < postSetting.length; i++) {
+    postSetting[i].addEventListener('click', () => {
+        if (postSettingModal[i].classList.contains('invisible')) {
+            postSettingModal[i].classList.remove(
+                'invisible',
+                'opacity-0',
+                '-bottom-64'
+            );
+            postSettingModal[i].classList.add(
+                'visible',
+                'opacity-100',
+                '-bottom-[14.5rem]'
+            );
+        } else {
+            postSettingModal[i].classList.remove(
+                'visible',
+                'opacity-100',
+                '-bottom-[14.5rem]'
+            );
+            postSettingModal[i].classList.add(
+                'invisible',
+                'opacity-0',
+                '-bottom-64'
+            );
+        }
+    });
+}
 
 /**
  *WHEN THEN USER CLICKS ANYWHERE OUTSIDE OF SIDEBAR NAVIGATION OR MODAL, CLOSE IT
