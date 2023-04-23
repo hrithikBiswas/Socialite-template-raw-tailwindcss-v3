@@ -486,238 +486,43 @@
                                     </h3>
                                 </div>
                             </div>
-                            <button class="group h-9 w-9 rounded-full hover:bg-gray-200">
+                            <button id="post-setting" class="relative group h-9 w-9 rounded-full hover:bg-gray-200">
                                 <i class="fa-solid fa-ellipsis fa-lg text-gray-500 group-hover:text-blue-600"></i>
-                            </button>
-                        </div>
-                        <div class="h-[360px] w-auto">
-                            <img class="h-full w-full object-cover" src="./assets/images/avatar-lg-4.jpg" alt="" />
-                        </div>
-                        <!-- Reaction -->
-                        <div class="px-4 py-5">
-                            <div class="grid grid-cols-3 grid-rows-1 items-center gap-x-1 overflow-hidden pb-2 pt-1">
-                                <div
-                                    class="group flex cursor-pointer items-center justify-center gap-x-1 overflow-hidden rounded-lg px-3 py-1 hover:bg-gray-100 xs:gap-x-2">
-                                    <span><i
-                                            class="fa-solid fa-thumbs-up text-gray-500 group-hover:text-gray-600 xs:text-[23px]"></i></span>
-                                    <span
-                                        class="text-base font-medium text-gray-500 group-hover:text-gray-600 xs:text-lg">Like</span>
-                                </div>
-                                <div
-                                    class="group flex cursor-pointer items-center justify-center gap-x-1 overflow-hidden rounded-lg px-3 py-1 hover:bg-gray-100 xs:gap-x-2">
-                                    <span><i
-                                            class="fa-solid fa-comment text-gray-500 group-hover:text-gray-600 xs:text-[23px]"></i></span>
-                                    <span
-                                        class="text-base font-medium text-gray-500 group-hover:text-gray-600 xs:text-lg">Comment</span>
-                                </div>
-                                <div
-                                    class="group flex cursor-pointer items-center justify-center gap-x-1 overflow-hidden rounded-lg px-3 py-1 hover:bg-gray-100 xs:gap-x-2">
-                                    <span><i
-                                            class="fa-solid fa-share-nodes text-gray-500 group-hover:text-gray-600 xs:text-[23px]"></i></span>
-                                    <span
-                                        class="text-base font-medium text-gray-500 group-hover:text-gray-600 xs:text-lg">Share</span>
-                                </div>
-                            </div>
-                            <div class="flex gap-x-3 border-b-[1px] border-gray-200 py-3">
-                                <div class="flex">
-                                    <img class="h-6 w-6 rounded-full ring-2 ring-white"
-                                        src="./assets/images/avatar-1.jpg" alt="" />
-                                    <img class="-ml-[6px] h-6 w-6 rounded-full ring-2 ring-white"
-                                        src="./assets/images/avatar-2.jpg" alt="" />
-                                    <img class="-ml-[6px] h-6 w-6 rounded-full ring-2 ring-white"
-                                        src="./assets/images/avatar-3.jpg" alt="" />
-                                </div>
-                                <span class="text-gray-500">Liked <b>Johnson</b> and
-                                    <b>209 Others</b></span>
-                            </div>
 
-                            <!-- Comment -->
-                            <div class="py-3">
-                                <div class="my-2 flex gap-x-1">
-                                    <img class="h-9 w-9 rounded-full" src="./assets/images/avatar-1.jpg" alt="" />
-                                    <div class="flex flex-col">
-                                        <p class="rounded-md bg-gray-100 px-3 py-2 text-gray-700">
-                                            Lorem ipsum dolor sit.
-                                        </p>
-                                        <div class="flex gap-x-2 px-3 py-1 text-sm text-gray-500">
-                                            <span class="text-red-500"><i class="fa-solid fa-heart"></i>
-                                                Love</span>
-                                            <span>Replay</span>
-                                            <span>3d</span>
-                                        </div>
-                                    </div>
+                                <!-- modal  -->
+                                <div id="post-setting-modal"
+                                    class="invisible opacity-0 transition-all duration-300 ease-out absolute -bottom-64 right-0 w-56 rounded-lg shadow-md border-[1px] border-gray-100 py-2 bg-white">
+                                    <ul class="px-2">
+                                        <li>
+                                            <a href="#"
+                                                class="flex items-center gap-x-2 text-gray-500/90 w-full hover:bg-gray-100 rounded-md px-3 py-2 font-semibold"><i
+                                                    class="fa-solid fa-share-nodes"></i> Share</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                class="flex items-center gap-x-2 text-gray-500/90 w-full hover:bg-gray-100 rounded-md px-3 py-2 font-semibold"><i
+                                                    class="fa-solid fa-pen-to-square"></i> Edit post</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                class="flex items-center gap-x-2 text-gray-500/90 w-full hover:bg-gray-100 rounded-md px-3 py-2 font-semibold"><i
+                                                    class="fa-solid fa-comment-slash"></i> Disable comments</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"
+                                                class="flex items-center gap-x-2 text-gray-500/90 w-full hover:bg-gray-100 rounded-md px-3 py-2 font-semibold"><i
+                                                    class="fa-solid fa-star"></i> Add favorites</a>
+                                        </li>
+                                    </ul>
+                                    <hr class="my-2">
+                                    <ul class="px-2">
+                                        <li>
+                                            <a href="#"
+                                                class="flex items-center gap-x-2 text-rose-500/90 w-full hover:bg-rose-100 rounded-md px-3 py-2 font-semibold"><i
+                                                    class="fa-solid fa-trash"></i> Delete</a>
+                                        </li>
+                                    </ul>
                                 </div>
-                                <div class="my-2 flex gap-x-1">
-                                    <img class="h-9 w-9 rounded-full" src="./assets/images/avatar-1.jpg" alt="" />
-                                    <div class="flex flex-col">
-                                        <p class="rounded-md bg-gray-100 px-3 py-2 text-gray-700">
-                                            Lorem ipsum dolor sit amet
-                                            consectetur adipisicing elit.
-                                            Reprehenderit accusantium
-                                            aperiam eius numquam. Eum, iure
-                                            architecto?
-                                        </p>
-                                        <div class="flex gap-x-2 px-3 py-1 text-sm text-gray-500">
-                                            <span class="text-red-500"><i class="fa-solid fa-heart"></i>
-                                                Love</span>
-                                            <span>Replay</span>
-                                            <span>3d</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="#" class="font-medium text-gray-500 hover:text-blue-500 hover:underline">Veiw 8
-                                more Comments</a>
-                            <label class="relative mt-2.5 block">
-                                <input
-                                    class="block w-full rounded-full border border-gray-100 bg-gray-100 py-1.5 pl-4 pr-9 text-gray-500 shadow-sm outline-none placeholder:font-semibold placeholder:text-gray-400 sm:text-sm"
-                                    placeholder="Add your comment..." type="text" name="add-comment" />
-                                <span class="absolute inset-y-0 right-3 flex cursor-pointer items-center">
-                                    <span
-                                        class="group flex h-7 w-7 items-center justify-center rounded-full hover:bg-gray-300/60"><i
-                                            class="fa-solid fa-face-smile text-gray-400"></i></span>
-                                    <span
-                                        class="group flex h-7 w-7 items-center justify-center rounded-full hover:bg-gray-300/60"><i
-                                            class="fa-solid fa-image text-gray-400"></i></span>
-                                    <span
-                                        class="group flex h-7 w-7 items-center justify-center rounded-full hover:bg-gray-300/60"><i
-                                            class="fa-solid fa-link text-gray-400"></i></span>
-                                </span>
-                            </label>
-                        </div>
-                    </div>
-                    <!-- Post 02 -->
-                    <div class="my-4 rounded-lg bg-white shadow">
-                        <div class="flex items-center justify-between px-2.5 py-3">
-                            <div class="flex items-center gap-x-3">
-                                <img class="h-9 w-9 rounded-full" src="./assets/images/avatar-2.jpg" alt="" />
-                                <div class="flex flex-col">
-                                    <h2 class="font-bold text-gray-600 hover:text-blue-600/80">
-                                        <a href="#">Johnson Smith</a>
-                                    </h2>
-                                    <h3 class="font-semibold text-gray-600">
-                                        5Hrs
-                                        <span><i class="fa-solid fa-users fa-xs text-gray-600"></i></span>
-                                    </h3>
-                                </div>
-                            </div>
-                            <button class="group h-9 w-9 rounded-full hover:bg-gray-200">
-                                <i class="fa-solid fa-ellipsis fa-lg text-gray-500 group-hover:text-blue-600"></i>
-                            </button>
-                        </div>
-                        <div class="h-[360px] w-auto">
-                            <img class="h-full w-full object-cover" src="./assets/images/avatar-lg-4.jpg" alt="" />
-                        </div>
-                        <!-- Reaction -->
-                        <div class="px-4 py-5">
-                            <div class="grid grid-cols-3 grid-rows-1 items-center gap-x-1 overflow-hidden pb-2 pt-1">
-                                <div
-                                    class="group flex cursor-pointer items-center justify-center gap-x-1 overflow-hidden rounded-lg px-3 py-1 hover:bg-gray-100 xs:gap-x-2">
-                                    <span><i
-                                            class="fa-solid fa-thumbs-up text-gray-500 group-hover:text-gray-600 xs:text-[23px]"></i></span>
-                                    <span
-                                        class="text-base font-medium text-gray-500 group-hover:text-gray-600 xs:text-lg">Like</span>
-                                </div>
-                                <div
-                                    class="group flex cursor-pointer items-center justify-center gap-x-1 overflow-hidden rounded-lg px-3 py-1 hover:bg-gray-100 xs:gap-x-2">
-                                    <span><i
-                                            class="fa-solid fa-comment text-gray-500 group-hover:text-gray-600 xs:text-[23px]"></i></span>
-                                    <span
-                                        class="text-base font-medium text-gray-500 group-hover:text-gray-600 xs:text-lg">Comment</span>
-                                </div>
-                                <div
-                                    class="group flex cursor-pointer items-center justify-center gap-x-1 overflow-hidden rounded-lg px-3 py-1 hover:bg-gray-100 xs:gap-x-2">
-                                    <span><i
-                                            class="fa-solid fa-share-nodes text-gray-500 group-hover:text-gray-600 xs:text-[23px]"></i></span>
-                                    <span
-                                        class="text-base font-medium text-gray-500 group-hover:text-gray-600 xs:text-lg">Share</span>
-                                </div>
-                            </div>
-                            <div class="flex gap-x-3 border-b-[1px] border-gray-200 py-3">
-                                <div class="flex">
-                                    <img class="h-6 w-6 rounded-full ring-2 ring-white"
-                                        src="./assets/images/avatar-1.jpg" alt="" />
-                                    <img class="-ml-[6px] h-6 w-6 rounded-full ring-2 ring-white"
-                                        src="./assets/images/avatar-2.jpg" alt="" />
-                                    <img class="-ml-[6px] h-6 w-6 rounded-full ring-2 ring-white"
-                                        src="./assets/images/avatar-3.jpg" alt="" />
-                                </div>
-                                <span class="text-gray-500">Liked <b>Johnson</b> and
-                                    <b>209 Others</b></span>
-                            </div>
-
-                            <!-- Comment -->
-                            <div class="py-3">
-                                <div class="my-2 flex gap-x-1">
-                                    <img class="h-9 w-9 rounded-full" src="./assets/images/avatar-1.jpg" alt="" />
-                                    <div class="flex flex-col">
-                                        <p class="rounded-md bg-gray-100 px-3 py-2 text-gray-700">
-                                            Lorem ipsum dolor sit.
-                                        </p>
-                                        <div class="flex gap-x-2 px-3 py-1 text-sm text-gray-500">
-                                            <span class="text-red-500"><i class="fa-solid fa-heart"></i>
-                                                Love</span>
-                                            <span>Replay</span>
-                                            <span>3d</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="my-2 flex gap-x-1">
-                                    <img class="h-9 w-9 rounded-full" src="./assets/images/avatar-1.jpg" alt="" />
-                                    <div class="flex flex-col">
-                                        <p class="rounded-md bg-gray-100 px-3 py-2 text-gray-700">
-                                            Lorem ipsum dolor sit amet
-                                            consectetur adipisicing elit.
-                                            Reprehenderit accusantium
-                                            aperiam eius numquam. Eum, iure
-                                            architecto?
-                                        </p>
-                                        <div class="flex gap-x-2 px-3 py-1 text-sm text-gray-500">
-                                            <span class="text-red-500"><i class="fa-solid fa-heart"></i>
-                                                Love</span>
-                                            <span>Replay</span>
-                                            <span>3d</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="#" class="font-medium text-gray-500 hover:text-blue-500 hover:underline">Veiw 8
-                                more Comments</a>
-                            <label class="relative mt-2.5 block">
-                                <input
-                                    class="block w-full rounded-full border border-gray-100 bg-gray-100 py-1.5 pl-4 pr-9 text-gray-500 shadow-sm outline-none placeholder:font-semibold placeholder:text-gray-400 sm:text-sm"
-                                    placeholder="Add your comment..." type="text" name="add-comment" />
-                                <span class="absolute inset-y-0 right-3 flex cursor-pointer items-center">
-                                    <span
-                                        class="group flex h-7 w-7 items-center justify-center rounded-full hover:bg-gray-300/60"><i
-                                            class="fa-solid fa-face-smile text-gray-400"></i></span>
-                                    <span
-                                        class="group flex h-7 w-7 items-center justify-center rounded-full hover:bg-gray-300/60"><i
-                                            class="fa-solid fa-image text-gray-400"></i></span>
-                                    <span
-                                        class="group flex h-7 w-7 items-center justify-center rounded-full hover:bg-gray-300/60"><i
-                                            class="fa-solid fa-link text-gray-400"></i></span>
-                                </span>
-                            </label>
-                        </div>
-                    </div>
-                    <!-- Post 03 -->
-                    <div class="my-4 rounded-lg bg-white shadow">
-                        <div class="flex items-center justify-between px-2.5 py-3">
-                            <div class="flex items-center gap-x-3">
-                                <img class="h-9 w-9 rounded-full" src="./assets/images/avatar-2.jpg" alt="" />
-                                <div class="flex flex-col">
-                                    <h2 class="font-bold text-gray-600 hover:text-blue-600/80">
-                                        <a href="#">Johnson Smith</a>
-                                    </h2>
-                                    <h3 class="font-semibold text-gray-600">
-                                        5Hrs
-                                        <span><i class="fa-solid fa-users fa-xs text-gray-600"></i></span>
-                                    </h3>
-                                </div>
-                            </div>
-                            <button class="group h-9 w-9 rounded-full hover:bg-gray-200">
-                                <i class="fa-solid fa-ellipsis fa-lg text-gray-500 group-hover:text-blue-600"></i>
                             </button>
                         </div>
                         <div class="h-[360px] w-auto">

@@ -57,6 +57,34 @@ exitModal.addEventListener('click', () => {
     postModalShow.classList.add('invisible', 'opacity-0');
     html.classList.remove('overflow-hidden');
 });
+
+/**
+ *  POST SETTINGS MODAL
+ */
+const postSetting = document.getElementById('post-setting');
+const postSettingModal = document.getElementById('post-setting-modal');
+postSetting.addEventListener('click', () => {
+    if (postSettingModal.classList.contains('invisible')) {
+        postSettingModal.classList.remove(
+            'invisible',
+            'opacity-0',
+            '-bottom-64'
+        );
+        postSettingModal.classList.add(
+            'visible',
+            'opacity-100',
+            '-bottom-[14.5rem]'
+        );
+    } else {
+        postSettingModal.classList.remove(
+            'visible',
+            'opacity-100',
+            '-bottom-[14.5rem]'
+        );
+        postSettingModal.classList.add('invisible', 'opacity-0', '-bottom-64');
+    }
+});
+
 /**
  *WHEN THEN USER CLICKS ANYWHERE OUTSIDE OF SIDEBAR NAVIGATION OR MODAL, CLOSE IT
  */
