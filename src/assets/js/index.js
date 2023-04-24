@@ -11,14 +11,6 @@ sidebarBtn.addEventListener('click', () => {
     showSidebar.classList.add('left-0');
     aside.classList.add('sidebar-dropshadow');
 });
-// // WHEN THEN USER CLICKS ANYWHERE OUTSIDE OF THE SIDEBAR NAVIGATION, CLOSE IT
-// window.onclick = function (event) {
-//     if (event.target == aside) {
-//         showSidebar.classList.remove('left-0');
-//         showSidebar.classList.add('-left-72');
-//         aside.classList.remove('sidebar-dropshadow');
-//     }
-// };
 
 /**
  *  SHOW & HIDE SEARCH MODAL DEPEND ON FOCUSIN OR FOCUSOUT EVENTS
@@ -106,6 +98,54 @@ profileSetting.addEventListener('click', () => {
 });
 
 /**
+ *SHOW CHAT BOX
+ */
+const chatBtn = document.querySelectorAll('#chat-box-btn, #chat-btn-lg');
+const showChatBox = document.getElementById('show-chat-box');
+const chatBoxContainer = document.getElementById('chat-box-container');
+const exitChat = document.getElementById('exit-chat');
+for (let i = 0; i < chatBtn.length; i++) {
+    chatBtn[i].addEventListener('click', () => {
+        chatBoxContainer.classList.remove('-right-[1010px]');
+        chatBoxContainer.classList.add('right-0');
+        showChatBox.classList.add('sidebar-dropshadow');
+        html.classList.add('overflow-hidden');
+    });
+}
+exitChat.addEventListener('click', () => {
+    chatBoxContainer.classList.remove('right-0');
+    showChatBox.classList.remove('sidebar-dropshadow');
+    html.classList.remove('overflow-hidden');
+    chatBoxContainer.classList.add('-right-[1010px]');
+});
+
+/**
+ *CHAT TABS
+ */
+const tabs = document.querySelectorAll('[data-target]'),
+    tabContents = document.querySelectorAll('[data-content]');
+
+tabs.forEach((tab) => {
+    tab.addEventListener('click', () => {
+        const target = document.querySelector(tab.dataset.target);
+
+        tabContents.forEach((tabContent) => {
+            tabContent.classList.remove('block');
+            tabContent.classList.add('hidden');
+        });
+        target.classList.remove('hidden');
+        target.classList.add('block');
+
+        tabs.forEach((tab) => {
+            tab.classList.remove('text-blue-700', 'border-b-2');
+            tab.classList.add('text-gray-500');
+        });
+        tab.classList.remove('text-gray-500');
+        tab.classList.add('text-blue-700', 'border-b-2');
+    });
+});
+
+/**
  *WHEN THEN USER CLICKS ANYWHERE OUTSIDE OF SIDEBAR NAVIGATION OR MODAL, CLOSE IT
  */
 window.onclick = function (event) {
@@ -119,6 +159,13 @@ window.onclick = function (event) {
         postModalShow.classList.remove('visible', 'opacity-100');
         postModalShow.classList.add('invisible', 'opacity-0');
         html.classList.remove('overflow-hidden');
+    }
+    // hide chat container
+    if (event.target == showChatBox) {
+        chatBoxContainer.classList.remove('right-0');
+        showChatBox.classList.remove('sidebar-dropshadow');
+        html.classList.remove('overflow-hidden');
+        chatBoxContainer.classList.add('-right-[1010px]');
     }
 };
 
