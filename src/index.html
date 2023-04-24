@@ -967,7 +967,8 @@
 
             <!-- Main Content Right Side -->
             <div class="ml-10 hidden min-w-[260px] lg:block">
-                <div class="rounded-md border-[1px] border-gray-100 bg-white px-4 py-3 shadow">
+                <div id="birthday"
+                    class="cursor-pointer rounded-md border-[1px] border-gray-100 bg-white px-4 py-3 shadow">
                     <h3 class="font-semibold text-gray-700">Birthdays</h3>
                     <div class="mt-3 flex items-center gap-x-3 pb-2.5 text-gray-500">
                         <img class="h-9 w-9" src="./assets/images/gift-icon.png" alt="gift-icon" />
@@ -1046,7 +1047,7 @@
         </div>
     </div>
 
-    <!----------- CHATS  ----------->
+    <!----------------- CHATS  ----------------->
     <!-- chat button  -->
     <button id="chat-btn-lg"
         class="hidden lg:flex w-12 h-12 group bg-blue-600 rounded-full fixed bottom-8 right-8 justify-center items-center">
@@ -1193,6 +1194,59 @@
                                 <span>Sara Trencati</span></a>
                         </li>
                     </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------------- BIRTHDAY MODAL  ----------------->
+    <div id="birthday-modal" class="z-20">
+        <div id="birthday-modal-container"
+            class="invisible transition-all z-20 duration-700 absolute left-1/2 -top-80 w-[600px] p-7 -translate-x-1/2 shadow-lg rounded-lg bg-white">
+            <div class="flex justify-between items-center mb-6">
+                <div class="flex gap-x-4 items-center">
+                    <span class="rounded-full w-7 h-7 flex items-center justify-center bg-amber-100"><i
+                            class="fa-solid fa-gift text-amber-500"></i></span>
+                    <h1 class="font-semibold text-xl text-gray-700">Today's Birthday</h1>
+                </div>
+                <button id="exit-birthday-modal"
+                    class="text-gray-400 rounded-full w-7 h-7 hover:text-gray-500 bg-gray-100"><i
+                        class="fa-solid fa-xmark fa-lg"></i></button>
+            </div>
+            <div class="flex flex-col gap-y-7">
+                <div class="flex gap-x-6 items-center">
+                    <img class="w-14 h-14 rounded-full" src="./assets/images/avatar-3.jpg" alt="">
+                    <div class="flex flex-col gap-y-3 w-full">
+                        <div class="flex justify-between items-center">
+                            <h1 class="font-semibold text-gray-500 text-lg">Alex Dolgove</h1>
+                            <span class="text-gray-400 font-medium">19 years old</span>
+                        </div>
+                        <label class="relative block">
+                            <input
+                                class="block bg-white w-full border text-gray-400 border-slate-300 rounded-md py-2 pl-4 pr-12 shadow-sm outline-none"
+                                placeholder="Write her on Timeline" type="text" name="search" />
+                            <span class="absolute inset-y-0 right-4 flex items-center pl-2">
+                                <i class="fa-solid fa-face-smile fa-lg text-gray-600"></i>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+                <div class="flex gap-x-6 items-center">
+                    <img class="w-14 h-14 rounded-full" src="./assets/images/avatar-2.jpg" alt="">
+                    <div class="flex flex-col gap-y-3 w-full">
+                        <div class="flex justify-between items-center">
+                            <h1 class="font-semibold text-gray-500 text-lg">Scofeild</h1>
+                            <span class="text-gray-400 font-medium">42 years old</span>
+                        </div>
+                        <label class="relative block">
+                            <input
+                                class="block bg-white w-full border text-gray-400 border-slate-300 rounded-md py-2 pl-4 pr-12 shadow-sm outline-none"
+                                placeholder="Write his on Timeline" type="text" name="search" />
+                            <span class="absolute inset-y-0 right-4 flex items-center pl-2">
+                                <i class="fa-solid fa-face-smile fa-lg text-gray-600"></i>
+                            </span>
+                        </label>
+                    </div>
                 </div>
             </div>
         </div>

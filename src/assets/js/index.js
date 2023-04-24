@@ -146,6 +146,28 @@ tabs.forEach((tab) => {
 });
 
 /**
+ *BIRTHDAY MODAL
+ */
+const birthday = document.getElementById('birthday');
+const birthdayModal = document.getElementById('birthday-modal');
+const exitBirthdayModal = document.getElementById('exit-birthday-modal');
+const birthdayModalContainer = document.getElementById(
+    'birthday-modal-container'
+);
+birthday.addEventListener('click', () => {
+    birthdayModalContainer.classList.remove('invisible', '-top-80');
+    birthdayModalContainer.classList.add('visible', 'top-14');
+    birthdayModal.classList.add('modal-dropshadow');
+    html.classList.add('overflow-hidden');
+});
+exitBirthdayModal.addEventListener('click', () => {
+    birthdayModalContainer.classList.remove('visible', 'top-14');
+    birthdayModalContainer.classList.add('invisible', '-top-80');
+    birthdayModal.classList.remove('modal-dropshadow');
+    html.classList.remove('overflow-hidden');
+});
+
+/**
  *WHEN THEN USER CLICKS ANYWHERE OUTSIDE OF SIDEBAR NAVIGATION OR MODAL, CLOSE IT
  */
 window.onclick = function (event) {
@@ -166,6 +188,13 @@ window.onclick = function (event) {
         showChatBox.classList.remove('modal-dropshadow');
         html.classList.remove('overflow-hidden');
         chatBoxContainer.classList.add('-right-[1010px]');
+    }
+    // Invisible birthday modal
+    if (event.target == birthdayModal) {
+        birthdayModalContainer.classList.remove('visible', 'top-14');
+        birthdayModalContainer.classList.add('invisible', '-top-80');
+        birthdayModal.classList.remove('modal-dropshadow');
+        html.classList.remove('overflow-hidden');
     }
 };
 
