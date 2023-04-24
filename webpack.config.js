@@ -7,7 +7,9 @@ const TerserPlugin = require('terser-webpack-plugin');
 const config = {
     entry: {
         main: './src/assets/js/index.js',
+        auth: './src/assets/js/auth.js',
         fontAwesome: './src/assets/js/font-awesome.js',
+        tailwind: './src/assets/css/styles.css',
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -84,6 +86,7 @@ const config = {
         new HtmlWebpackPlugin({
             filename: 'index.html',
             template: './src/index.html',
+            chunks: ['tailwind', 'main', 'fontAwesome'],
             inject: 'body',
             minify: {
                 collapseWhitespace: true, // html minify method 02
@@ -93,6 +96,7 @@ const config = {
         new HtmlWebpackPlugin({
             filename: 'login.html',
             template: './src/login.html',
+            chunks: ['tailwind', 'auth', 'fontAwesome'],
             inject: 'body',
             minify: {
                 collapseWhitespace: true, // html minify method 02
@@ -102,6 +106,7 @@ const config = {
         new HtmlWebpackPlugin({
             filename: 'register.html',
             template: './src/register.html',
+            chunks: ['tailwind', 'auth', 'fontAwesome'],
             inject: 'body',
             minify: {
                 collapseWhitespace: true, // html minify method 02
