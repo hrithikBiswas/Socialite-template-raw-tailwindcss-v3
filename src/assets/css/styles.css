@@ -27,7 +27,7 @@
     .active-status {
         @apply relative after:absolute after:bottom-0 after:right-0 after:h-[10px] after:w-[10px] after:rounded-full after:bg-green-500 after:ring-2 after:ring-white;
     }
-    .sidebar-dropshadow {
+    .modal-dropshadow {
         position: fixed;
         top: 0;
         left: 0;

@@ -9,7 +9,7 @@ const aside = document.getElementById('aside');
 sidebarBtn.addEventListener('click', () => {
     showSidebar.classList.remove('-left-72');
     showSidebar.classList.add('left-0');
-    aside.classList.add('sidebar-dropshadow');
+    aside.classList.add('modal-dropshadow');
 });
 
 /**
@@ -108,13 +108,13 @@ for (let i = 0; i < chatBtn.length; i++) {
     chatBtn[i].addEventListener('click', () => {
         chatBoxContainer.classList.remove('-right-[1010px]');
         chatBoxContainer.classList.add('right-0');
-        showChatBox.classList.add('sidebar-dropshadow');
+        showChatBox.classList.add('modal-dropshadow');
         html.classList.add('overflow-hidden');
     });
 }
 exitChat.addEventListener('click', () => {
     chatBoxContainer.classList.remove('right-0');
-    showChatBox.classList.remove('sidebar-dropshadow');
+    showChatBox.classList.remove('modal-dropshadow');
     html.classList.remove('overflow-hidden');
     chatBoxContainer.classList.add('-right-[1010px]');
 });
@@ -152,7 +152,7 @@ window.onclick = function (event) {
     if (event.target == aside) {
         showSidebar.classList.remove('left-0');
         showSidebar.classList.add('-left-72');
-        aside.classList.remove('sidebar-dropshadow');
+        aside.classList.remove('modal-dropshadow');
     }
     // invisible post modal
     if (event.target == postModalShow) {
@@ -163,7 +163,7 @@ window.onclick = function (event) {
     // hide chat container
     if (event.target == showChatBox) {
         chatBoxContainer.classList.remove('right-0');
-        showChatBox.classList.remove('sidebar-dropshadow');
+        showChatBox.classList.remove('modal-dropshadow');
         html.classList.remove('overflow-hidden');
         chatBoxContainer.classList.add('-right-[1010px]');
     }
