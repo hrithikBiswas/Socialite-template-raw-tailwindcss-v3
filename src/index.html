@@ -116,8 +116,49 @@
                             class="badge flex h-10 w-10 cursor-pointer items-center justify-center rounded-full bg-gray-200/80 px-2 py-1.5 after:content-['4']">
                             <i class="fa-solid fa-message" style="color: #3f424b"></i>
                         </li>
-                        <li class="cursor-pointer">
-                            <img class="h-10 w-10 rounded-full" src="./assets/images/avatar-2.jpg" alt="dp" />
+                        <li class="cursor-pointer relative">
+                            <a href="JavaScript:void(0)" id="profile-setting"><img class="h-10 w-10 rounded-full"
+                                    src="./assets/images/avatar-2.jpg" alt="dp" /></a>
+
+                            <!-- profile setting modal  -->
+                            <div id="profile-setting-modal"
+                                class="invisible opacity-0 transition-all duration-200 absolute bottom-12 lg:-bottom-[313px] -right-7 lg:right-0 w-[270px] p-2.5 border-[1px] border-gray-100 rounded-md shadow-lg bg-white">
+                                <div class="flex gap-x-3 items-center hover:bg-gray-100 px-2 py-1.5 rounded-md">
+                                    <img class="w-9 h-9 rounded-full" src="./assets/images/avatar-2.jpg" alt="">
+                                    <div class="flex flex-col">
+                                        <h2 class="font-semibold text-lg text-gray-700">Stella Johnson</h2>
+                                        <span class="text-sm text-gray-500">@johnson</span>
+                                    </div>
+                                </div>
+                                <hr class="-mx-[10px] my-2">
+                                <ul class="">
+                                    <li>
+                                        <a href="#"
+                                            class="flex items-center gap-x-4 text-gray-600 w-full hover:bg-gray-100 rounded-md px-3 py-2"><i
+                                                class="fa-solid fa-gear fa-lg"></i> My Account</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="flex items-center gap-x-4 text-gray-600 w-full hover:bg-gray-100 rounded-md px-3 py-2"><i
+                                                class="fa-solid fa-flag fa-lg"></i> Manage Pages</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="flex items-center gap-x-4 text-gray-600 w-full hover:bg-gray-100 rounded-md px-3 py-2"><i
+                                                class="fa-solid fa-wallet fa-lg"></i> My Billing</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="flex items-center gap-x-4 text-gray-600 w-full hover:bg-gray-100 rounded-md px-3 py-2"><i
+                                                class="fa-solid fa-moon fa-lg"></i> Night Mode</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="flex items-center gap-x-4 text-gray-600 w-full hover:bg-gray-100 rounded-md px-3 py-2"><i
+                                                class="fa-solid fa-right-from-bracket fa-lg"></i> Log Out</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -403,7 +444,7 @@
                 </div>
                 <!-- CREATE POST MODAL -->
                 <div id="post-modal-show"
-                    class="invisible opacity-0 transition-all duration-200 fixed bottom-0 left-0 right-0 top-0 z-20 bg-neutral-200/70">
+                    class="invisible opacity-0 transition-all duration-300 fixed bottom-0 left-0 right-0 top-0 z-20 bg-neutral-200/70">
                     <div
                         class="absolute left-1/2 top-1/2 w-[260px] -translate-x-1/2 -translate-y-[55%] shadow-lg rounded-lg bg-white xs:w-[355px] sm:w-min">
                         <div class="relative p-2 sm:py-3">

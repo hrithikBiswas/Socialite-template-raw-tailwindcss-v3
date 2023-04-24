@@ -90,6 +90,20 @@ for (let i = 0; i < postSetting.length; i++) {
         }
     });
 }
+/**
+ *  PROFILE SETTINGS MODAL
+ */
+const profileSetting = document.getElementById('profile-setting');
+const profileSettingModal = document.getElementById('profile-setting-modal');
+profileSetting.addEventListener('click', () => {
+    if (profileSettingModal.classList.contains('invisible')) {
+        profileSettingModal.classList.remove('invisible', 'opacity-0');
+        profileSettingModal.classList.add('visible', 'opacity-100');
+    } else {
+        profileSettingModal.classList.remove('visible', 'opacity-100');
+        profileSettingModal.classList.add('invisible', 'opacity-0');
+    }
+});
 
 /**
  *WHEN THEN USER CLICKS ANYWHERE OUTSIDE OF SIDEBAR NAVIGATION OR MODAL, CLOSE IT
