@@ -149,8 +149,21 @@
                                     </li>
                                     <li>
                                         <a href="#"
-                                            class="flex items-center gap-x-4 text-gray-600 w-full hover:bg-gray-100 rounded-md px-3 py-2"><i
-                                                class="fa-solid fa-moon fa-lg"></i> Night Mode</a>
+                                            class="flex justify-between text-gray-600 w-full hover:bg-gray-100 rounded-md px-3 py-2">
+                                            <span class="flex items-center gap-x-4"><i
+                                                    class="fa-solid fa-moon fa-lg"></i> Night Mode</span>
+                                            <label for="darkmode-toggle">
+                                                <div class="relative">
+                                                    <input id="darkmode-toggle" type="checkbox" class="hidden" />
+                                                    <div class="h-4 w-9 rounded-full bg-gray-200 shadow-inner"></div>
+                                                    <div
+                                                        class="toggle__dot absolute h-5 w-5 rounded-full bg-gray-400 shadow">
+                                                    </div>
+                                                </div>
+                                            </label>
+                                        </a>
+
+
                                     </li>
                                     <li>
                                         <a href="#"

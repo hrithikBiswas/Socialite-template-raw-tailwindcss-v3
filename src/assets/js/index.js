@@ -197,3 +197,39 @@ window.onclick = function (event) {
         html.classList.remove('overflow-hidden');
     }
 };
+
+/**
+ * ENABLE DARK MODE
+ */
+
+const darkmode = document.getElementById('darkmode-toggle');
+const themeStoreInLocalStorage = 'dark';
+
+const selectedTheme = localStorage.getItem('selected-theme'); // get local storage value
+
+//set current theme value
+const getCurrentTheme = () =>
+    document.body.classList.contains(themeStoreInLocalStorage)
+        ? 'dark'
+        : 'light';
+
+//Checks if the user has previously selected a theme
+if (selectedTheme) {
+    document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](
+        themeStoreInLocalStorage
+    );
+    if (document.body.classList.contains(themeStoreInLocalStorage)) {
+        darkmode.checked = true;
+    } else {
+        darkmode.checked = false;
+    }
+}
+
+darkmode.addEventListener('click', () => {
+    if (darkmode.checked) {
+        document.body.classList.add('dark');
+    } else {
+        document.body.classList.remove('dark');
+    }
+    localStorage.setItem('selected-theme', getCurrentTheme()); // set theme value in localStorage
+});

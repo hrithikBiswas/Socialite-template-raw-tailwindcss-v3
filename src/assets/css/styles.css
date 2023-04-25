@@ -35,4 +35,11 @@
         bottom: 0;
         background: #e5e5e566;
     }
+    .toggle__dot {
+        @apply -top-[2.5px] left-0 transition-all duration-300 ease-in-out;
+    }
+
+    input:checked ~ .toggle__dot {
+        @apply left-0 translate-x-full bg-emerald-400;
+    }
 }
