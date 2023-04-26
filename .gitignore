@@ -2,6 +2,8 @@
 coverage/
 dist/*
 !dist/index.html
+!dist/login.html
+!dist/register.html
 node_modules/
 *.log
 
