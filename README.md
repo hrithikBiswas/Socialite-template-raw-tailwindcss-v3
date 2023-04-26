@@ -23,7 +23,7 @@ npm run build-dev
 ## Running
 
 ```sh
-node dist/assets/js/main.bundle.js
+node dist/index.html
 ```
 
 ## Credits
