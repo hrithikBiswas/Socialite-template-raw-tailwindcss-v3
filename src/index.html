@@ -2,9 +2,9 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
     <title>Socialite Template</title>
 </head>
@@ -20,12 +20,12 @@
                         <i class="fa-solid fa-bars fa-xl text-gray-400 hover:text-gray-500"></i>
                     </button>
                     <a href="#">
-                        <img src="./assets/images/logo.png" alt="logo" />
+                        <img src="./assets/images/logo.png" alt="logo">
                     </a>
                 </div>
                 <!-- Header Search Input -->
                 <div class="hidden lg:block">
-                    <label class="relative block">
+                    <div class="relative block">
                         <div>
                             <span class="sr-only">Search</span>
                             <span class="absolute inset-y-0 left-0 flex items-center pl-4">
@@ -34,12 +34,12 @@
                             <input id="search-modal"
                                 class="block w-[544px] rounded-3xl border-[1px] border-gray-100 bg-gray-100 py-2.5 pl-10 pr-8 text-gray-600 shadow-sm outline-none placeholder:text-slate-400 dark:border-gray-700 dark:bg-gray-900"
                                 placeholder="Search for Friends, Videos and more.." type="text" name="search"
-                                autocomplete="off" />
+                                autocomplete="off">
                         </div>
 
                         <!-- Header Search Input Modal -->
                         <div id="show-search-modal"
-                            class="absolute hidden w-full rounded-md bg-white dark:bg-dark-foreground shadow-md ring-1 ring-gray-100 dark:ring-gray-700">
+                            class="absolute hidden w-full rounded-md bg-white shadow-md ring-1 ring-gray-100 dark:bg-dark-foreground dark:ring-gray-700">
                             <h1 class="my-3 pl-4 text-xl font-semibold text-gray-700 dark:text-gray-100">
                                 Recently
                             </h1>
@@ -49,7 +49,7 @@
                                         class="flex items-center gap-x-4 text-lg font-semibold text-gray-600/90 dark:text-gray-100">
                                         <span class="">
                                             <img src="./assets/images/avatar-1.jpg" class="h-9 w-9 rounded-full"
-                                                alt="" />
+                                                alt="imgimg">
                                         </span>
                                         <span>Dennis Han</span></a>
                                 </li>
@@ -58,7 +58,7 @@
                                         class="flex items-center gap-x-4 text-lg font-semibold text-gray-600/90 dark:text-gray-100">
                                         <span class="">
                                             <img src="./assets/images/avatar-2.jpg" class="h-9 w-9 rounded-full"
-                                                alt="" />
+                                                alt="imgimg">
                                         </span>
                                         <span>Scofeild</span></a>
                                 </li>
@@ -67,7 +67,7 @@
                                         class="flex items-center gap-x-4 text-lg font-semibold text-gray-600/90 dark:text-gray-100">
                                         <span class="">
                                             <img src="./assets/images/avatar-3.jpg" class="h-9 w-9 rounded-full"
-                                                alt="" />
+                                                alt="imgimg">
                                         </span>
                                         <span>Sara Trencati</span></a>
                                 </li>
@@ -76,7 +76,7 @@
                                         class="flex items-center gap-x-4 text-lg font-semibold text-gray-600/90 dark:text-gray-100">
                                         <span class="">
                                             <img src="./assets/images/avatar-4.jpg" class="h-9 w-9 rounded-full"
-                                                alt="" />
+                                                alt="imgimg">
                                         </span>
                                         <span>Alex Dara</span></a>
                                 </li>
@@ -85,13 +85,13 @@
                                         class="flex items-center gap-x-4 text-lg font-semibold text-gray-600/90 dark:text-gray-100">
                                         <span class="">
                                             <img src="./assets/images/avatar-5.jpg" class="h-9 w-9 rounded-full"
-                                                alt="" />
+                                                alt="imgimg">
                                         </span>
                                         <span>Erica Jones</span></a>
                                 </li>
                             </ul>
                         </div>
-                    </label>
+                    </div>
                 </div>
                 <div class="flex gap-x-6 lg:hidden">
                     <button>
@@ -120,14 +120,14 @@
                         </li>
                         <li class="relative cursor-pointer">
                             <a href="JavaScript:void(0)" id="profile-setting"><img class="h-10 w-10 rounded-full"
-                                    src="./assets/images/avatar-2.jpg" alt="dp" /></a>
+                                    src="./assets/images/avatar-2.jpg" alt="dp"></a>
 
                             <!-- profile setting modal  -->
                             <div id="profile-setting-modal"
-                                class="invisible absolute -right-7 bottom-12 w-[270px] rounded-md border-[1px] border-gray-100 dark:border-gray-700 bg-white dark:bg-dark-foreground p-2.5 opacity-0 shadow-lg transition-all duration-200 lg:-bottom-[313px] lg:right-0">
+                                class="invisible absolute -right-7 bottom-12 w-[270px] rounded-md border-[1px] border-gray-100 bg-white p-2.5 opacity-0 shadow-lg transition-all duration-200 dark:border-gray-700 dark:bg-dark-foreground lg:-bottom-[313px] lg:right-0">
                                 <div
                                     class="flex items-center gap-x-3 rounded-md px-2 py-1.5 hover:bg-gray-100 dark:hover:bg-gray-800">
-                                    <img class="h-9 w-9 rounded-full" src="./assets/images/avatar-2.jpg" alt="" />
+                                    <img class="h-9 w-9 rounded-full" src="./assets/images/avatar-2.jpg" alt="imgimg">
                                     <div class="flex flex-col">
                                         <h2 class="text-lg font-semibold text-gray-700 dark:text-gray-100">
                                             Stella Johnson
@@ -135,48 +135,45 @@
                                         <span class="text-sm text-gray-500 dark:text-gray-200">@johnson</span>
                                     </div>
                                 </div>
-                                <hr class="-mx-[10px] my-2 border-t-[1px] dark:border-gray-700" />
+                                <hr class="-mx-[10px] my-2 border-t-[1px] dark:border-gray-700">
                                 <ul class="">
                                     <li>
                                         <a href="#"
-                                            class="flex w-full items-center gap-x-4 rounded-md px-3 py-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"><i
+                                            class="flex w-full items-center gap-x-4 rounded-md px-3 py-2 text-gray-600 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-800"><i
                                                 class="fa-solid fa-gear fa-lg"></i>
                                             My Account</a>
                                     </li>
                                     <li>
                                         <a href="#"
-                                            class="flex w-full items-center gap-x-4 rounded-md px-3 py-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"><i
+                                            class="flex w-full items-center gap-x-4 rounded-md px-3 py-2 text-gray-600 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-800"><i
                                                 class="fa-solid fa-flag fa-lg"></i>
                                             Manage Pages</a>
                                     </li>
                                     <li>
                                         <a href="#"
-                                            class="flex w-full items-center gap-x-4 rounded-md px-3 py-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"><i
+                                            class="flex w-full items-center gap-x-4 rounded-md px-3 py-2 text-gray-600 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-800"><i
                                                 class="fa-solid fa-wallet fa-lg"></i>
                                             My Billing</a>
                                     </li>
-                                    <li>
-                                        <a href="#"
-                                            class="flex w-full justify-between rounded-md px-3 py-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800">
-                                            <span class="flex items-center gap-x-4"><i
-                                                    class="fa-solid fa-moon fa-lg"></i>
-                                                Night Mode</span>
-                                            <label for="darkmode-toggle">
-                                                <div class="relative">
-                                                    <input id="darkmode-toggle" type="checkbox" class="hidden" />
-                                                    <div
-                                                        class="h-4 w-9 rounded-full bg-gray-200 dark:bg-gray-700 shadow-inner">
-                                                    </div>
-                                                    <div
-                                                        class="toggle__dot absolute h-5 w-5 rounded-full bg-gray-400 shadow">
-                                                    </div>
+                                    <li
+                                        class="flex w-full justify-between rounded-md px-3 py-2 text-gray-600 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-800">
+                                        <span class="flex items-center gap-x-4"><i class="fa-solid fa-moon fa-lg"></i>
+                                            Night Mode</span>
+                                        <label for="darkmode-toggle">
+                                            <div class="relative">
+                                                <input id="darkmode-toggle" type="checkbox" class="hidden">
+                                                <div
+                                                    class="h-4 w-9 rounded-full bg-gray-200 shadow-inner dark:bg-gray-700">
                                                 </div>
-                                            </label>
-                                        </a>
+                                                <div
+                                                    class="toggle__dot absolute h-5 w-5 rounded-full bg-gray-400 shadow">
+                                                </div>
+                                            </div>
+                                        </label>
                                     </li>
                                     <li>
                                         <a href="./login.html"
-                                            class="flex w-full items-center gap-x-4 rounded-md px-3 py-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"><i
+                                            class="flex w-full items-center gap-x-4 rounded-md px-3 py-2 text-gray-600 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-800"><i
                                                 class="fa-solid fa-right-from-bracket fa-lg"></i>
                                             Log Out</a>
                                     </li>
@@ -250,15 +247,16 @@
 
                     <!-- Sidebar Contacts -->
                     <div class="my-4 border-t-[1px] border-gray-200 dark:border-gray-700">
-                        <h1 class="my-3 pl-4 text-lg font-bold text-gray-700 dark:text-gray-300/90">
+                        <h2 class="my-3 pl-4 text-lg font-bold text-gray-700 dark:text-gray-300/90">
                             Contacts
-                        </h1>
+                        </h2>
                         <ul>
                             <li class="rounded-lg px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-900">
                                 <a href="#"
                                     class="flex items-center gap-x-4 text-lg font-semibold text-gray-600/90 dark:text-gray-300/90">
                                     <span class="active-status">
-                                        <img src="./assets/images/avatar-1.jpg" class="h-9 w-9 rounded-full" alt="" />
+                                        <img src="./assets/images/avatar-1.jpg" class="h-9 w-9 rounded-full"
+                                            alt="imgimg">
                                     </span>
                                     <span>Dennis Han</span></a>
                             </li>
@@ -266,7 +264,8 @@
                                 <a href="#"
                                     class="flex items-center gap-x-4 text-lg font-semibold text-gray-600/90 dark:text-gray-300/90">
                                     <span class="active-status">
-                                        <img src="./assets/images/avatar-2.jpg" class="h-9 w-9 rounded-full" alt="" />
+                                        <img src="./assets/images/avatar-2.jpg" class="h-9 w-9 rounded-full"
+                                            alt="imgimg">
                                     </span>
                                     <span>Scofeild</span></a>
                             </li>
@@ -274,7 +273,8 @@
                                 <a href="#"
                                     class="flex items-center gap-x-4 text-lg font-semibold text-gray-600/90 dark:text-gray-300/90">
                                     <span class="">
-                                        <img src="./assets/images/avatar-7.jpg" class="h-9 w-9 rounded-full" alt="" />
+                                        <img src="./assets/images/avatar-7.jpg" class="h-9 w-9 rounded-full"
+                                            alt="imgimg">
                                     </span>
                                     <span>Ms. Grechen</span></a>
                             </li>
@@ -282,7 +282,8 @@
                                 <a href="#"
                                     class="flex items-center gap-x-4 text-lg font-semibold text-gray-600/90 dark:text-gray-300/90">
                                     <span class="">
-                                        <img src="./assets/images/avatar-4.jpg" class="h-9 w-9 rounded-full" alt="" />
+                                        <img src="./assets/images/avatar-4.jpg" class="h-9 w-9 rounded-full"
+                                            alt="imgimg">
                                     </span>
                                     <span>Alex Dara</span></a>
                             </li>
@@ -291,9 +292,9 @@
 
                     <!-- Sidebar Pages  -->
                     <div class="my-4 border-t-[1px] border-gray-200 dark:border-gray-700">
-                        <h1 class="my-3 pl-4 text-lg font-bold text-gray-700 dark:text-gray-300/90">
+                        <h2 class="my-3 pl-4 text-lg font-bold text-gray-700 dark:text-gray-300/90">
                             Pages
-                        </h1>
+                        </h2>
                         <ul>
                             <li class="rounded-lg px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-900">
                                 <a href="#"
@@ -393,9 +394,9 @@
                     <a href="#">
                         <div class="relative h-[170px] rounded-xl">
                             <img class="h-full w-full rounded-xl object-cover brightness-90"
-                                src="./assets/images/avatar-lg-1.jpg" alt="" />
+                                src="./assets/images/avatar-lg-1.jpg" alt="imgimg">
                             <img class="absolute left-3 top-3 h-8 w-8 rounded-full ring-2 ring-white"
-                                src="./assets/images/avatar-6.jpg" alt="" />
+                                src="./assets/images/avatar-6.jpg" alt="imgimg">
                             <h1
                                 class="absolute bottom-2 left-3 w-3/4 overflow-hidden text-ellipsis whitespace-nowrap text-base font-semibold text-white">
                                 Erica Jones
@@ -405,9 +406,9 @@
                     <a href="#">
                         <div class="relative h-[170px] rounded-xl">
                             <img class="h-full w-full rounded-xl object-cover brightness-90"
-                                src="./assets/images/avatar-lg-2.jpg" alt="" />
+                                src="./assets/images/avatar-lg-2.jpg" alt="imgimg">
                             <img class="absolute left-3 top-3 h-8 w-8 rounded-full ring-2 ring-white"
-                                src="./assets/images/avatar-2.jpg" alt="" />
+                                src="./assets/images/avatar-2.jpg" alt="imgimg">
                             <h1
                                 class="absolute bottom-2 left-3 w-3/4 overflow-hidden text-ellipsis whitespace-nowrap text-base font-semibold text-white">
                                 Dennis Han
@@ -417,9 +418,9 @@
                     <a href="#">
                         <div class="relative h-[170px] rounded-xl">
                             <img class="h-full w-full rounded-xl object-cover brightness-90"
-                                src="./assets/images/avatar-lg-3.jpg" alt="" />
+                                src="./assets/images/avatar-lg-3.jpg" alt="imgimg">
                             <img class="absolute left-3 top-3 h-8 w-8 rounded-full ring-2 ring-white"
-                                src="./assets/images/avatar-3.jpg" alt="" />
+                                src="./assets/images/avatar-3.jpg" alt="imgimg">
                             <h1
                                 class="absolute bottom-2 left-3 w-3/4 overflow-hidden text-ellipsis whitespace-nowrap text-base font-semibold text-white">
                                 Alex Mohani
@@ -429,9 +430,9 @@
                     <a class="hidden md:block" href="#">
                         <div class="relative h-[170px] rounded-xl">
                             <img class="h-full w-full rounded-xl object-cover brightness-90"
-                                src="./assets/images/avatar-lg-4.jpg" alt="" />
+                                src="./assets/images/avatar-lg-4.jpg" alt="imgimg">
                             <img class="absolute left-3 top-3 h-8 w-8 rounded-full ring-2 ring-white"
-                                src="./assets/images/avatar-4.jpg" alt="" />
+                                src="./assets/images/avatar-4.jpg" alt="imgimg">
                             <h1
                                 class="absolute bottom-2 left-3 w-3/4 overflow-hidden text-ellipsis whitespace-nowrap text-base font-semibold text-white">
                                 Jonathan
@@ -441,9 +442,9 @@
                     <a class="hidden md:block" href="#">
                         <div class="relative h-[170px] rounded-xl">
                             <img class="h-full w-full rounded-xl object-cover brightness-90"
-                                src="./assets/images/avatar-lg-5.jpg" alt="" />
+                                src="./assets/images/avatar-lg-5.jpg" alt="imgimg">
                             <img class="absolute left-3 top-3 h-8 w-8 rounded-full ring-2 ring-white"
-                                src="./assets/images/avatar-5.jpg" alt="" />
+                                src="./assets/images/avatar-5.jpg" alt="imgimg">
                             <h1
                                 class="absolute bottom-2 left-3 w-3/4 overflow-hidden text-ellipsis whitespace-nowrap text-base font-semibold text-white">
                                 Stella Johnson
@@ -455,10 +456,10 @@
                 <div
                     class="my-7 rounded-lg bg-white px-4 py-3 shadow ring-1 ring-gray-200/30 dark:bg-dark-foreground dark:ring-dark-foreground">
                     <div class="flex gap-x-3">
-                        <img class="h-10 w-10 rounded-full" src="./assets/images/avatar-2.jpg" alt="" />
+                        <img class="h-10 w-10 rounded-full" src="./assets/images/avatar-2.jpg" alt="imgimg">
                         <input type="text" id="post-modal-input"
                             class="post-modal-input w-full rounded-3xl bg-gray-100 px-5 py-1.5 text-gray-600 outline-none hover:bg-gray-200 dark:bg-gray-900 dark:hover:bg-gray-800"
-                            placeholder="What's Your Mind? Hasme" />
+                            placeholder="What's Your Mind? Hasme">
                     </div>
                     <div class="mt-3 flex justify-between">
                         <button
@@ -486,28 +487,29 @@
                 </div>
                 <!-- CREATE POST MODAL -->
                 <div id="post-modal-show"
-                    class="invisible fixed bottom-0 left-0 right-0 top-0 z-20 bg-neutral-200/70 dark:bg-neutral-700/60 opacity-0 transition-all duration-300">
+                    class="invisible fixed bottom-0 left-0 right-0 top-0 z-20 bg-neutral-200/70 opacity-0 transition-all duration-300 dark:bg-neutral-700/60">
                     <div
-                        class="absolute left-1/2 top-1/2 w-[260px] -translate-x-1/2 -translate-y-[55%] rounded-lg bg-white dark:bg-dark-foreground shadow-lg xs:w-[355px] sm:w-min">
+                        class="absolute left-1/2 top-1/2 w-[260px] -translate-x-1/2 -translate-y-[55%] rounded-lg bg-white shadow-lg dark:bg-dark-foreground xs:w-[355px] sm:w-min">
                         <div class="relative p-2 sm:py-3">
                             <h1 class="text-center text-lg font-semibold text-gray-700 dark:text-gray-100">
                                 Create Post
                             </h1>
                             <button id="exit-post-modal"
-                                class="group absolute right-2 top-1.5 flex h-8 w-8 items-center justify-center rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-gray-200/70 sm:top-2.5">
+                                class="group absolute right-2 top-1.5 flex h-8 w-8 items-center justify-center rounded-full bg-gray-100 hover:bg-gray-200/70 dark:bg-gray-800 sm:top-2.5">
                                 <i
                                     class="fa-solid fa-xmark fa-lg text-gray-400 group-hover:text-gray-500/80 dark:text-gray-500/80 dark:group-hover:text-gray-400"></i>
                             </button>
                         </div>
-                        <hr class="border-t-[1px] dark:border-gray-700" />
+                        <hr class="border-t-[1px] dark:border-gray-700">
                         <div class="flex gap-x-3 p-5">
-                            <img class="h-9 w-9 rounded-full" src="./assets/images/avatar-2.jpg" alt="" />
+                            <img class="h-9 w-9 rounded-full" src="./assets/images/avatar-2.jpg" alt="imgimg">
                             <textarea
-                                class="mt-1 resize-none text-lg font-semibold text-gray-500 dark:text-gray-300 dark:bg-dark-foreground outline-none"
-                                name="" id="" cols="50" rows="5" placeholder="What's Your Mind? Stella!"></textarea>
+                                class="mt-1 resize-none text-lg font-semibold text-gray-500 outline-none dark:bg-dark-foreground dark:text-gray-300"
+                                name="post-modal-text" cols="50" rows="5"
+                                placeholder="What's Your Mind? Stella!"></textarea>
                         </div>
                         <div
-                            class="mx-4 my-3 flex justify-center gap-x-2 rounded-xl border-[1px] bg-gray-50 dark:border-gray-800 dark:bg-gray-800 p-0.5 sm:p-1">
+                            class="mx-4 my-3 flex justify-center gap-x-2 rounded-xl border-[1px] bg-gray-50 p-0.5 dark:border-gray-800 dark:bg-gray-800 sm:p-1">
                             <button
                                 class="mr-1 flex h-9 w-9 items-center justify-center rounded-full bg-blue-100 md:inline-flex">
                                 <i class="fa-solid fa-image text-xl text-blue-600"></i>
@@ -529,11 +531,10 @@
                                 <i class="fa-solid fa-ellipsis fa-xl text-gray-500"></i>
                             </button>
                         </div>
-                        <hr class="border-t-[1px] dark:border-gray-700" />
+                        <hr class="border-t-[1px] dark:border-gray-700">
                         <div class="flex justify-between gap-x-1 px-3 py-4">
                             <select name="privacy-post"
-                                class="rounded-lg border-[1px] p-0 font-semibold text-gray-500/70 dark:bg-gray-800 dark:border-gray-800 dark:text-gray-200 outline-none xs:px-2 xs:py-1.5"
-                                id="">
+                                class="rounded-lg border-[1px] p-0 font-semibold text-gray-500/70 outline-none dark:border-gray-800 dark:bg-gray-800 dark:text-gray-200 xs:px-2 xs:py-1.5">
                                 <option value="only me">Only Me</option>
                                 <option value="Every One">Every One</option>
                                 <option value="People I Follow">
@@ -561,7 +562,7 @@
                     <div class="my-4 rounded-lg bg-white shadow dark:bg-dark-foreground">
                         <div class="flex items-center justify-between px-2.5 py-3">
                             <div class="flex items-center gap-x-3">
-                                <img class="h-9 w-9 rounded-full" src="./assets/images/avatar-2.jpg" alt="" />
+                                <img class="h-9 w-9 rounded-full" src="./assets/images/avatar-2.jpg" alt="imgimg">
                                 <div class="flex flex-col">
                                     <h2 class="font-bold text-gray-600 hover:text-blue-600/80 dark:text-gray-300/90">
                                         <a href="#">Johnson Smith</a>
@@ -572,41 +573,41 @@
                                     </h3>
                                 </div>
                             </div>
-                            <button
-                                class="post-setting group relative h-9 w-9 rounded-full hover:bg-gray-200 dark:hover:bg-gray-800">
-                                <i
-                                    class="fa-solid fa-ellipsis fa-lg text-gray-400 group-hover:text-gray-500 dark:text-gray-500 dark:group-hover:text-gray-400"></i>
+                            <div
+                                class="post-setting group flex justify-center relative h-9 w-9 rounded-full hover:bg-gray-200 dark:hover:bg-gray-800">
+                                <button><i
+                                        class="fa-solid fa-ellipsis fa-lg text-gray-400 group-hover:text-gray-500 dark:text-gray-500 dark:group-hover:text-gray-400"></i></button>
 
                                 <!-- modal  -->
                                 <div
-                                    class="post-setting-modal invisible absolute -bottom-64 right-0 w-56 rounded-lg border-[1px] border-gray-100 dark:border-gray-700 bg-white dark:bg-dark-foreground py-2 opacity-0 shadow-md transition-all duration-300 ease-out">
+                                    class="post-setting-modal invisible absolute -bottom-64 right-0 w-56 rounded-lg border-[1px] border-gray-100 bg-white py-2 opacity-0 shadow-md transition-all duration-300 ease-out dark:border-gray-700 dark:bg-dark-foreground">
                                     <ul class="px-2">
                                         <li>
                                             <a href="#"
-                                                class="flex w-full items-center gap-x-2 rounded-md px-3 py-2 font-semibold text-gray-500/90 dark:text-gray-300 dark:dark:text-gray-800 hover:bg-gray-100 dark:hover:bg-gray-800"><i
+                                                class="flex w-full items-center gap-x-2 rounded-md px-3 py-2 font-semibold text-gray-500/90 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-800"><i
                                                     class="fa-solid fa-share-nodes"></i>
                                                 Share</a>
                                         </li>
                                         <li>
                                             <a href="#"
-                                                class="flex w-full items-center gap-x-2 rounded-md px-3 py-2 font-semibold text-gray-500/90 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"><i
+                                                class="flex w-full items-center gap-x-2 rounded-md px-3 py-2 font-semibold text-gray-500/90 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-800"><i
                                                     class="fa-solid fa-pen-to-square"></i>
                                                 Edit post</a>
                                         </li>
                                         <li>
                                             <a href="#"
-                                                class="flex w-full items-center gap-x-2 rounded-md px-3 py-2 font-semibold text-gray-500/90 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"><i
+                                                class="flex w-full items-center gap-x-2 rounded-md px-3 py-2 font-semibold text-gray-500/90 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-800"><i
                                                     class="fa-solid fa-comment-slash"></i>
                                                 Disable comments</a>
                                         </li>
                                         <li>
                                             <a href="#"
-                                                class="flex w-full items-center gap-x-2 rounded-md px-3 py-2 font-semibold text-gray-500/90 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"><i
+                                                class="flex w-full items-center gap-x-2 rounded-md px-3 py-2 font-semibold text-gray-500/90 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-800"><i
                                                     class="fa-solid fa-star"></i>
                                                 Add favorites</a>
                                         </li>
                                     </ul>
-                                    <hr class="my-2 border-t-[1px] dark:border-gray-700" />
+                                    <hr class="my-2 border-t-[1px] dark:border-gray-700">
                                     <ul class="px-2">
                                         <li>
                                             <a href="#"
@@ -616,10 +617,10 @@
                                         </li>
                                     </ul>
                                 </div>
-                            </button>
+                            </div>
                         </div>
                         <div class="h-[360px] w-auto">
-                            <img class="h-full w-full object-cover" src="./assets/images/avatar-lg-4.jpg" alt="" />
+                            <img class="h-full w-full object-cover" src="./assets/images/avatar-lg-4.jpg" alt="imgimg">
                         </div>
                         <!-- Reaction -->
                         <div class="px-4 py-5">
@@ -647,14 +648,14 @@
                                 </div>
                             </div>
                             <div
-                                class="cursor-pointer flex gap-x-3 border-b-[1px] border-gray-200 py-3 dark:border-gray-700">
+                                class="flex cursor-pointer gap-x-3 border-b-[1px] border-gray-200 py-3 dark:border-gray-700">
                                 <div class="flex">
                                     <img class="h-6 w-6 rounded-full ring-2 ring-white dark:ring-dark-foreground"
-                                        src="./assets/images/avatar-1.jpg" alt="" />
+                                        src="./assets/images/avatar-1.jpg" alt="imgimg">
                                     <img class="-ml-[6px] h-6 w-6 rounded-full ring-2 ring-white dark:ring-dark-foreground"
-                                        src="./assets/images/avatar-2.jpg" alt="" />
+                                        src="./assets/images/avatar-2.jpg" alt="imgimg">
                                     <img class="-ml-[6px] h-6 w-6 rounded-full ring-2 ring-white dark:ring-dark-foreground"
-                                        src="./assets/images/avatar-3.jpg" alt="" />
+                                        src="./assets/images/avatar-3.jpg" alt="imgimg">
                                 </div>
                                 <span class="text-gray-500 dark:text-gray-200">Liked <b>Johnson</b> and
                                     <b>209 Others</b></span>
@@ -663,7 +664,7 @@
                             <!-- Comment -->
                             <div class="py-3">
                                 <div class="my-2 flex gap-x-1">
-                                    <img class="h-9 w-9 rounded-full" src="./assets/images/avatar-1.jpg" alt="" />
+                                    <img class="h-9 w-9 rounded-full" src="./assets/images/avatar-1.jpg" alt="imgimg">
                                     <div class="flex flex-col">
                                         <p
                                             class="rounded-md bg-gray-100 px-3 py-2 text-gray-700 dark:bg-gray-800 dark:text-gray-300">
@@ -678,7 +679,7 @@
                                     </div>
                                 </div>
                                 <div class="my-2 flex gap-x-1">
-                                    <img class="h-9 w-9 rounded-full" src="./assets/images/avatar-1.jpg" alt="" />
+                                    <img class="h-9 w-9 rounded-full" src="./assets/images/avatar-1.jpg" alt="imgimg">
                                     <div class="flex flex-col">
                                         <p
                                             class="rounded-md bg-gray-100 px-3 py-2 text-gray-700 dark:bg-gray-800 dark:text-gray-300">
@@ -703,7 +704,7 @@
                             <label class="relative mt-2.5 block">
                                 <input
                                     class="block w-full rounded-lg border bg-gray-100 py-1.5 pl-4 pr-9 text-gray-500 shadow-sm outline-none placeholder:font-semibold placeholder:text-gray-400 dark:border-gray-800 dark:bg-gray-800 sm:text-sm"
-                                    placeholder="Add your comment..." type="text" name="add-comment" />
+                                    placeholder="Add your comment..." type="text" name="add-comment">
                                 <span class="absolute inset-y-0 right-3 flex cursor-pointer items-center">
                                     <span
                                         class="group flex h-7 w-7 items-center justify-center rounded-full hover:bg-gray-300/60 dark:hover:bg-gray-700"><i
@@ -722,7 +723,7 @@
                     <div class="my-4 rounded-lg bg-white shadow dark:bg-dark-foreground">
                         <div class="flex items-center justify-between px-2.5 py-3">
                             <div class="flex items-center gap-x-3">
-                                <img class="h-9 w-9 rounded-full" src="./assets/images/avatar-2.jpg" alt="" />
+                                <img class="h-9 w-9 rounded-full" src="./assets/images/avatar-2.jpg" alt="imgimg">
                                 <div class="flex flex-col">
                                     <h2 class="font-bold text-gray-600 hover:text-blue-600/80 dark:text-gray-300/90">
                                         <a href="#">Johnson Smith</a>
@@ -733,41 +734,41 @@
                                     </h3>
                                 </div>
                             </div>
-                            <button
-                                class="post-setting group relative h-9 w-9 rounded-full hover:bg-gray-200 dark:hover:bg-gray-800">
-                                <i
-                                    class="fa-solid fa-ellipsis fa-lg text-gray-400 group-hover:text-gray-500 dark:text-gray-500 dark:group-hover:text-gray-400"></i>
+                            <div
+                                class="post-setting group flex justify-center relative h-9 w-9 rounded-full hover:bg-gray-200 dark:hover:bg-gray-800">
+                                <button><i
+                                        class="fa-solid fa-ellipsis fa-lg text-gray-400 group-hover:text-gray-500 dark:text-gray-500 dark:group-hover:text-gray-400"></i></button>
 
                                 <!-- modal  -->
                                 <div
-                                    class="post-setting-modal invisible absolute -bottom-64 right-0 w-56 rounded-lg border-[1px] border-gray-100 dark:border-gray-700 bg-white dark:bg-dark-foreground py-2 opacity-0 shadow-md transition-all duration-300 ease-out">
+                                    class="post-setting-modal invisible absolute -bottom-64 right-0 w-56 rounded-lg border-[1px] border-gray-100 bg-white py-2 opacity-0 shadow-md transition-all duration-300 ease-out dark:border-gray-700 dark:bg-dark-foreground">
                                     <ul class="px-2">
                                         <li>
                                             <a href="#"
-                                                class="flex w-full items-center gap-x-2 rounded-md px-3 py-2 font-semibold text-gray-500/90 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"><i
+                                                class="flex w-full items-center gap-x-2 rounded-md px-3 py-2 font-semibold text-gray-500/90 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-800"><i
                                                     class="fa-solid fa-share-nodes"></i>
                                                 Share</a>
                                         </li>
                                         <li>
                                             <a href="#"
-                                                class="flex w-full items-center gap-x-2 rounded-md px-3 py-2 font-semibold text-gray-500/90 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"><i
+                                                class="flex w-full items-center gap-x-2 rounded-md px-3 py-2 font-semibold text-gray-500/90 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-800"><i
                                                     class="fa-solid fa-pen-to-square"></i>
                                                 Edit post</a>
                                         </li>
                                         <li>
                                             <a href="#"
-                                                class="flex w-full items-center gap-x-2 rounded-md px-3 py-2 font-semibold text-gray-500/90 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"><i
+                                                class="flex w-full items-center gap-x-2 rounded-md px-3 py-2 font-semibold text-gray-500/90 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-800"><i
                                                     class="fa-solid fa-comment-slash"></i>
                                                 Disable comments</a>
                                         </li>
                                         <li>
                                             <a href="#"
-                                                class="flex w-full items-center gap-x-2 rounded-md px-3 py-2 font-semibold text-gray-500/90 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"><i
+                                                class="flex w-full items-center gap-x-2 rounded-md px-3 py-2 font-semibold text-gray-500/90 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-800"><i
                                                     class="fa-solid fa-star"></i>
                                                 Add favorites</a>
                                         </li>
                                     </ul>
-                                    <hr class="my-2 border-t-[1px] dark:border-gray-700" />
+                                    <hr class="my-2 border-t-[1px] dark:border-gray-700">
                                     <ul class="px-2">
                                         <li>
                                             <a href="#"
@@ -777,10 +778,10 @@
                                         </li>
                                     </ul>
                                 </div>
-                            </button>
+                            </div>
                         </div>
                         <div class="h-[360px] w-auto">
-                            <img class="h-full w-full object-cover" src="./assets/images/avatar-lg-4.jpg" alt="" />
+                            <img class="h-full w-full object-cover" src="./assets/images/avatar-lg-4.jpg" alt="imgimg">
                         </div>
                         <!-- Reaction -->
                         <div class="px-4 py-5">
@@ -808,14 +809,14 @@
                                 </div>
                             </div>
                             <div
-                                class="cursor-pointer flex gap-x-3 border-b-[1px] border-gray-200 py-3 dark:border-gray-700">
+                                class="flex cursor-pointer gap-x-3 border-b-[1px] border-gray-200 py-3 dark:border-gray-700">
                                 <div class="flex">
                                     <img class="h-6 w-6 rounded-full ring-2 ring-white dark:ring-dark-foreground"
-                                        src="./assets/images/avatar-1.jpg" alt="" />
+                                        src="./assets/images/avatar-1.jpg" alt="imgimg">
                                     <img class="-ml-[6px] h-6 w-6 rounded-full ring-2 ring-white dark:ring-dark-foreground"
-                                        src="./assets/images/avatar-2.jpg" alt="" />
+                                        src="./assets/images/avatar-2.jpg" alt="imgimg">
                                     <img class="-ml-[6px] h-6 w-6 rounded-full ring-2 ring-white dark:ring-dark-foreground"
-                                        src="./assets/images/avatar-3.jpg" alt="" />
+                                        src="./assets/images/avatar-3.jpg" alt="imgimg">
                                 </div>
                                 <span class="text-gray-500 dark:text-gray-200">Liked <b>Johnson</b> and
                                     <b>209 Others</b></span>
@@ -824,7 +825,7 @@
                             <!-- Comment -->
                             <div class="py-3">
                                 <div class="my-2 flex gap-x-1">
-                                    <img class="h-9 w-9 rounded-full" src="./assets/images/avatar-1.jpg" alt="" />
+                                    <img class="h-9 w-9 rounded-full" src="./assets/images/avatar-1.jpg" alt="imgimg">
                                     <div class="flex flex-col">
                                         <p
                                             class="rounded-md bg-gray-100 px-3 py-2 text-gray-700 dark:bg-gray-800 dark:text-gray-300">
@@ -839,7 +840,7 @@
                                     </div>
                                 </div>
                                 <div class="my-2 flex gap-x-1">
-                                    <img class="h-9 w-9 rounded-full" src="./assets/images/avatar-1.jpg" alt="" />
+                                    <img class="h-9 w-9 rounded-full" src="./assets/images/avatar-1.jpg" alt="imgimg">
                                     <div class="flex flex-col">
                                         <p
                                             class="rounded-md bg-gray-100 px-3 py-2 text-gray-700 dark:bg-gray-800 dark:text-gray-300">
@@ -864,7 +865,7 @@
                             <label class="relative mt-2.5 block">
                                 <input
                                     class="block w-full rounded-lg border bg-gray-100 py-1.5 pl-4 pr-9 text-gray-500 shadow-sm outline-none placeholder:font-semibold placeholder:text-gray-400 dark:border-gray-800 dark:bg-gray-800 sm:text-sm"
-                                    placeholder="Add your comment..." type="text" name="add-comment" />
+                                    placeholder="Add your comment..." type="text" name="add-comment">
                                 <span class="absolute inset-y-0 right-3 flex cursor-pointer items-center">
                                     <span
                                         class="group flex h-7 w-7 items-center justify-center rounded-full hover:bg-gray-300/60 dark:hover:bg-gray-700"><i
@@ -883,7 +884,7 @@
                     <div class="my-4 rounded-lg bg-white shadow dark:bg-dark-foreground">
                         <div class="flex items-center justify-between px-2.5 py-3">
                             <div class="flex items-center gap-x-3">
-                                <img class="h-9 w-9 rounded-full" src="./assets/images/avatar-2.jpg" alt="" />
+                                <img class="h-9 w-9 rounded-full" src="./assets/images/avatar-2.jpg" alt="imgimg">
                                 <div class="flex flex-col">
                                     <h2 class="font-bold text-gray-600 hover:text-blue-600/80 dark:text-gray-300/90">
                                         <a href="#">Johnson Smith</a>
@@ -894,41 +895,41 @@
                                     </h3>
                                 </div>
                             </div>
-                            <button
-                                class="post-setting group relative h-9 w-9 rounded-full hover:bg-gray-200 dark:hover:bg-gray-800">
-                                <i
-                                    class="fa-solid fa-ellipsis fa-lg text-gray-400 group-hover:text-gray-500 dark:text-gray-500 dark:group-hover:text-gray-400"></i>
+                            <div
+                                class="post-setting group flex justify-center relative h-9 w-9 rounded-full hover:bg-gray-200 dark:hover:bg-gray-800">
+                                <button><i
+                                        class="fa-solid fa-ellipsis fa-lg text-gray-400 group-hover:text-gray-500 dark:text-gray-500 dark:group-hover:text-gray-400"></i></button>
 
                                 <!-- modal  -->
                                 <div
-                                    class="post-setting-modal invisible absolute -bottom-64 right-0 w-56 rounded-lg border-[1px] border-gray-100 dark:border-gray-700 bg-white dark:bg-dark-foreground py-2 opacity-0 shadow-md transition-all duration-300 ease-out">
+                                    class="post-setting-modal invisible absolute -bottom-64 right-0 w-56 rounded-lg border-[1px] border-gray-100 bg-white py-2 opacity-0 shadow-md transition-all duration-300 ease-out dark:border-gray-700 dark:bg-dark-foreground">
                                     <ul class="px-2">
                                         <li>
                                             <a href="#"
-                                                class="flex w-full items-center gap-x-2 rounded-md px-3 py-2 font-semibold text-gray-500/90 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"><i
+                                                class="flex w-full items-center gap-x-2 rounded-md px-3 py-2 font-semibold text-gray-500/90 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-800"><i
                                                     class="fa-solid fa-share-nodes"></i>
                                                 Share</a>
                                         </li>
                                         <li>
                                             <a href="#"
-                                                class="flex w-full items-center gap-x-2 rounded-md px-3 py-2 font-semibold text-gray-500/90 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"><i
+                                                class="flex w-full items-center gap-x-2 rounded-md px-3 py-2 font-semibold text-gray-500/90 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-800"><i
                                                     class="fa-solid fa-pen-to-square"></i>
                                                 Edit post</a>
                                         </li>
                                         <li>
                                             <a href="#"
-                                                class="flex w-full items-center gap-x-2 rounded-md px-3 py-2 font-semibold text-gray-500/90 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"><i
+                                                class="flex w-full items-center gap-x-2 rounded-md px-3 py-2 font-semibold text-gray-500/90 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-800"><i
                                                     class="fa-solid fa-comment-slash"></i>
                                                 Disable comments</a>
                                         </li>
                                         <li>
                                             <a href="#"
-                                                class="flex w-full items-center gap-x-2 rounded-md px-3 py-2 font-semibold text-gray-500/90 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"><i
+                                                class="flex w-full items-center gap-x-2 rounded-md px-3 py-2 font-semibold text-gray-500/90 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-800"><i
                                                     class="fa-solid fa-star"></i>
                                                 Add favorites</a>
                                         </li>
                                     </ul>
-                                    <hr class="my-2 border-t-[1px] dark:border-gray-700" />
+                                    <hr class="my-2 border-t-[1px] dark:border-gray-700">
                                     <ul class="px-2">
                                         <li>
                                             <a href="#"
@@ -938,10 +939,10 @@
                                         </li>
                                     </ul>
                                 </div>
-                            </button>
+                            </div>
                         </div>
                         <div class="h-[360px] w-auto">
-                            <img class="h-full w-full object-cover" src="./assets/images/avatar-lg-4.jpg" alt="" />
+                            <img class="h-full w-full object-cover" src="./assets/images/avatar-lg-4.jpg" alt="imgimg">
                         </div>
                         <!-- Reaction -->
                         <div class="px-4 py-5">
@@ -969,14 +970,14 @@
                                 </div>
                             </div>
                             <div
-                                class="cursor-pointer flex gap-x-3 border-b-[1px] border-gray-200 py-3 dark:border-gray-700">
+                                class="flex cursor-pointer gap-x-3 border-b-[1px] border-gray-200 py-3 dark:border-gray-700">
                                 <div class="flex">
                                     <img class="h-6 w-6 rounded-full ring-2 ring-white dark:ring-dark-foreground"
-                                        src="./assets/images/avatar-1.jpg" alt="" />
+                                        src="./assets/images/avatar-1.jpg" alt="imgimg">
                                     <img class="-ml-[6px] h-6 w-6 rounded-full ring-2 ring-white dark:ring-dark-foreground"
-                                        src="./assets/images/avatar-2.jpg" alt="" />
+                                        src="./assets/images/avatar-2.jpg" alt="imgimg">
                                     <img class="-ml-[6px] h-6 w-6 rounded-full ring-2 ring-white dark:ring-dark-foreground"
-                                        src="./assets/images/avatar-3.jpg" alt="" />
+                                        src="./assets/images/avatar-3.jpg" alt="imgimg">
                                 </div>
                                 <span class="text-gray-500 dark:text-gray-200">Liked <b>Johnson</b> and
                                     <b>209 Others</b></span>
@@ -985,7 +986,7 @@
                             <!-- Comment -->
                             <div class="py-3">
                                 <div class="my-2 flex gap-x-1">
-                                    <img class="h-9 w-9 rounded-full" src="./assets/images/avatar-1.jpg" alt="" />
+                                    <img class="h-9 w-9 rounded-full" src="./assets/images/avatar-1.jpg" alt="imgimg">
                                     <div class="flex flex-col">
                                         <p
                                             class="rounded-md bg-gray-100 px-3 py-2 text-gray-700 dark:bg-gray-800 dark:text-gray-300">
@@ -1000,7 +1001,7 @@
                                     </div>
                                 </div>
                                 <div class="my-2 flex gap-x-1">
-                                    <img class="h-9 w-9 rounded-full" src="./assets/images/avatar-1.jpg" alt="" />
+                                    <img class="h-9 w-9 rounded-full" src="./assets/images/avatar-1.jpg" alt="imgimg">
                                     <div class="flex flex-col">
                                         <p
                                             class="rounded-md bg-gray-100 px-3 py-2 text-gray-700 dark:bg-gray-800 dark:text-gray-300">
@@ -1025,7 +1026,7 @@
                             <label class="relative mt-2.5 block">
                                 <input
                                     class="block w-full rounded-lg border bg-gray-100 py-1.5 pl-4 pr-9 text-gray-500 shadow-sm outline-none placeholder:font-semibold placeholder:text-gray-400 dark:border-gray-800 dark:bg-gray-800 sm:text-sm"
-                                    placeholder="Add your comment..." type="text" name="add-comment" />
+                                    placeholder="Add your comment..." type="text" name="add-comment">
                                 <span class="absolute inset-y-0 right-3 flex cursor-pointer items-center">
                                     <span
                                         class="group flex h-7 w-7 items-center justify-center rounded-full hover:bg-gray-300/60 dark:hover:bg-gray-700"><i
@@ -1046,10 +1047,12 @@
             <!-- Main Content Right Side -->
             <div class="ml-10 hidden min-w-[260px] lg:block">
                 <div id="birthday"
-                    class="cursor-pointer rounded-md border-[1px] border-gray-100 dark:border-dark-foreground bg-white dark:bg-dark-foreground px-4 py-3 shadow">
-                    <h3 class="font-semibold text-gray-700 dark:text-gray-100">Birthdays</h3>
+                    class="cursor-pointer rounded-md border-[1px] border-gray-100 bg-white px-4 py-3 shadow dark:border-dark-foreground dark:bg-dark-foreground">
+                    <h3 class="font-semibold text-gray-700 dark:text-gray-100">
+                        Birthdays
+                    </h3>
                     <div class="mt-3 flex items-center gap-x-3 pb-2.5 text-gray-500 dark:text-gray-100">
-                        <img class="h-9 w-9" src="./assets/images/gift-icon.png" alt="gift-icon" />
+                        <img class="h-9 w-9" src="./assets/images/gift-icon.png" alt="gift-icon">
                         <p>
                             <b>Jessica Erica</b> and <b>two others</b> have
                             a Birthdays...
@@ -1073,7 +1076,8 @@
                                 <a href="#"
                                     class="flex items-center gap-x-4 text-lg font-semibold text-gray-600/90 dark:text-gray-200/90">
                                     <span class="active-status">
-                                        <img src="./assets/images/avatar-1.jpg" class="h-9 w-9 rounded-full" alt="" />
+                                        <img src="./assets/images/avatar-1.jpg" class="h-9 w-9 rounded-full"
+                                            alt="imgimg">
                                     </span>
                                     <span>Dennis Han</span></a>
                             </li>
@@ -1081,7 +1085,8 @@
                                 <a href="#"
                                     class="flex items-center gap-x-4 text-lg font-semibold text-gray-600/90 dark:text-gray-200/90">
                                     <span class="active-status">
-                                        <img src="./assets/images/avatar-2.jpg" class="h-9 w-9 rounded-full" alt="" />
+                                        <img src="./assets/images/avatar-2.jpg" class="h-9 w-9 rounded-full"
+                                            alt="imgimg">
                                     </span>
                                     <span>Scofeild</span></a>
                             </li>
@@ -1089,7 +1094,8 @@
                                 <a href="#"
                                     class="flex items-center gap-x-4 text-lg font-semibold text-gray-600/90 dark:text-gray-200/90">
                                     <span class="">
-                                        <img src="./assets/images/avatar-3.jpg" class="h-9 w-9 rounded-full" alt="" />
+                                        <img src="./assets/images/avatar-3.jpg" class="h-9 w-9 rounded-full"
+                                            alt="imgimg">
                                     </span>
                                     <span>Sara Trencati</span></a>
                             </li>
@@ -1097,7 +1103,8 @@
                                 <a href="#"
                                     class="flex items-center gap-x-4 text-lg font-semibold text-gray-600/90 dark:text-gray-200/90">
                                     <span class="active-status">
-                                        <img src="./assets/images/avatar-4.jpg" class="h-9 w-9 rounded-full" alt="" />
+                                        <img src="./assets/images/avatar-4.jpg" class="h-9 w-9 rounded-full"
+                                            alt="imgimg">
                                     </span>
                                     <span>Alex Dara</span></a>
                             </li>
@@ -1105,7 +1112,8 @@
                                 <a href="#"
                                     class="flex items-center gap-x-4 text-lg font-semibold text-gray-600/90 dark:text-gray-200/90">
                                     <span class="">
-                                        <img src="./assets/images/avatar-5.jpg" class="h-9 w-9 rounded-full" alt="" />
+                                        <img src="./assets/images/avatar-5.jpg" class="h-9 w-9 rounded-full"
+                                            alt="imgimg">
                                     </span>
                                     <span>Erica Jones</span></a>
                             </li>
@@ -1113,7 +1121,8 @@
                                 <a href="#"
                                     class="flex items-center gap-x-4 text-lg font-semibold text-gray-600/90 dark:text-gray-200/90">
                                     <span class="">
-                                        <img src="./assets/images/avatar-7.jpg" class="h-9 w-9 rounded-full" alt="" />
+                                        <img src="./assets/images/avatar-7.jpg" class="h-9 w-9 rounded-full"
+                                            alt="imgimg">
                                     </span>
                                     <span>Stella Johnson</span></a>
                             </li>
@@ -1121,7 +1130,8 @@
                                 <a href="#"
                                     class="flex items-center gap-x-4 text-lg font-semibold text-gray-600/90 dark:text-gray-200/90">
                                     <span class="">
-                                        <img src="./assets/images/avatar-6.jpg" class="h-9 w-9 rounded-full" alt="" />
+                                        <img src="./assets/images/avatar-6.jpg" class="h-9 w-9 rounded-full"
+                                            alt="imgimg">
                                     </span>
                                     <span>Alex Dolgove</span></a>
                             </li>
@@ -1144,9 +1154,11 @@
     </button>
     <div id="show-chat-box" class="z-20">
         <div id="chat-box-container"
-            class="fixed -right-[1010px] bottom-0 top-0 w-full bg-white dark:bg-dark-background transition-all duration-300 lg:w-80">
+            class="fixed -right-[1010px] bottom-0 top-0 w-full bg-white transition-all duration-300 dark:bg-dark-background lg:w-80">
             <div class="flex justify-between p-4">
-                <h1 class="text-2xl font-bold text-gray-800 dark:text-gray-100">Chats</h1>
+                <h1 class="text-2xl font-bold text-gray-800 dark:text-gray-100">
+                    Chats
+                </h1>
                 <div class="flex items-center gap-x-2">
                     <button id="exit-chat"
                         class="h-7 w-7 rounded-full text-gray-400 hover:bg-gray-100 hover:text-gray-500 dark:hover:bg-gray-900 dark:hover:text-gray-300">
@@ -1160,39 +1172,39 @@
                         class="h-7 w-7 rounded-full text-gray-400 hover:bg-gray-100 hover:text-gray-500 dark:hover:bg-gray-900 dark:hover:text-gray-300">
                         <i class="fa-solid fa-gear"></i>
                     </button>
-                    <button
-                        class="post-setting relative h-7 w-7 rounded-full text-gray-400 hover:bg-gray-100 hover:text-gray-500 dark:hover:bg-gray-900 dark:hover:text-gray-300">
-                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    <div
+                        class="post-setting flex justify-center relative h-7 w-7 rounded-full text-gray-400 hover:bg-gray-100 hover:text-gray-500 dark:hover:bg-gray-900 dark:hover:text-gray-300">
+                        <button><i class="fa-solid fa-ellipsis-vertical"></i></button>
                         <!-- modal  -->
                         <div
-                            class="post-setting-modal invisible absolute -bottom-64 right-0 w-56 rounded-lg border-[1px] border-gray-100 dark:border-gray-700 bg-white dark:bg-dark-foreground py-2 opacity-0 shadow-md transition-all duration-300 ease-out">
+                            class="post-setting-modal invisible absolute -bottom-64 right-0 w-56 rounded-lg border-[1px] border-gray-100 bg-white py-2 opacity-0 shadow-md transition-all duration-300 ease-out dark:border-gray-700 dark:bg-dark-foreground">
                             <ul class="px-2">
                                 <li>
                                     <a href="#"
-                                        class="flex w-full items-center gap-x-2 rounded-md px-3 py-2 font-semibold text-gray-500/90 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"><i
+                                        class="flex w-full items-center gap-x-2 rounded-md px-3 py-2 font-semibold text-gray-500/90 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-800"><i
                                             class="fa-solid fa-square-check"></i>
                                         Mark all as read</a>
                                 </li>
                                 <li>
                                     <a href="#"
-                                        class="flex w-full items-center gap-x-2 rounded-md px-3 py-2 font-semibold text-gray-500/90 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"><i
+                                        class="flex w-full items-center gap-x-2 rounded-md px-3 py-2 font-semibold text-gray-500/90 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-800"><i
                                             class="fa-solid fa-gear"></i>
                                         Chat settings</a>
                                 </li>
                                 <li>
                                     <a href="#"
-                                        class="flex w-full items-center gap-x-2 rounded-md px-3 py-2 font-semibold text-gray-500/90 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"><i
+                                        class="flex w-full items-center gap-x-2 rounded-md px-3 py-2 font-semibold text-gray-500/90 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-800"><i
                                             class="fa-solid fa-bell-slash"></i>
                                         Disable notifications</a>
                                 </li>
                                 <li>
                                     <a href="#"
-                                        class="flex w-full items-center gap-x-2 rounded-md px-3 py-2 font-semibold text-gray-500/90 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800"><i
+                                        class="flex w-full items-center gap-x-2 rounded-md px-3 py-2 font-semibold text-gray-500/90 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-800"><i
                                             class="fa-solid fa-star"></i>
                                         Create a group chat</a>
                                 </li>
                             </ul>
-                            <hr class="my-2 border-t-[1px] dark:border-gray-700" />
+                            <hr class="my-2 border-t-[1px] dark:border-gray-700">
                             <ul class="px-2">
                                 <li>
                                     <a href="#"
@@ -1202,7 +1214,7 @@
                                 </li>
                             </ul>
                         </div>
-                    </button>
+                    </div>
                 </div>
             </div>
             <div>
@@ -1224,7 +1236,7 @@
                             <a href="#"
                                 class="flex items-center gap-x-4 text-lg font-semibold text-gray-600/90 dark:text-gray-200">
                                 <span class="active-status">
-                                    <img src="./assets/images/avatar-1.jpg" class="h-9 w-9 rounded-full" alt="" />
+                                    <img src="./assets/images/avatar-1.jpg" class="h-9 w-9 rounded-full" alt="imgimg">
                                 </span>
                                 <span>Dennis Han</span></a>
                         </li>
@@ -1232,7 +1244,7 @@
                             <a href="#"
                                 class="flex items-center gap-x-4 text-lg font-semibold text-gray-600/90 dark:text-gray-200">
                                 <span class="active-status">
-                                    <img src="./assets/images/avatar-2.jpg" class="h-9 w-9 rounded-full" alt="" />
+                                    <img src="./assets/images/avatar-2.jpg" class="h-9 w-9 rounded-full" alt="imgimg">
                                 </span>
                                 <span>Scofeild</span></a>
                         </li>
@@ -1240,7 +1252,7 @@
                             <a href="#"
                                 class="flex items-center gap-x-4 text-lg font-semibold text-gray-600/90 dark:text-gray-200">
                                 <span class="">
-                                    <img src="./assets/images/avatar-3.jpg" class="h-9 w-9 rounded-full" alt="" />
+                                    <img src="./assets/images/avatar-3.jpg" class="h-9 w-9 rounded-full" alt="imgimg">
                                 </span>
                                 <span>Sara Trencati</span></a>
                         </li>
@@ -1248,7 +1260,7 @@
                             <a href="#"
                                 class="flex items-center gap-x-4 text-lg font-semibold text-gray-600/90 dark:text-gray-200">
                                 <span class="active-status">
-                                    <img src="./assets/images/avatar-4.jpg" class="h-9 w-9 rounded-full" alt="" />
+                                    <img src="./assets/images/avatar-4.jpg" class="h-9 w-9 rounded-full" alt="imgimg">
                                 </span>
                                 <span>Alex Dara</span></a>
                         </li>
@@ -1256,7 +1268,7 @@
                             <a href="#"
                                 class="flex items-center gap-x-4 text-lg font-semibold text-gray-600/90 dark:text-gray-200">
                                 <span class="">
-                                    <img src="./assets/images/avatar-5.jpg" class="h-9 w-9 rounded-full" alt="" />
+                                    <img src="./assets/images/avatar-5.jpg" class="h-9 w-9 rounded-full" alt="imgimg">
                                 </span>
                                 <span>Erica Jones</span></a>
                         </li>
@@ -1264,7 +1276,7 @@
                             <a href="#"
                                 class="flex items-center gap-x-4 text-lg font-semibold text-gray-600/90 dark:text-gray-200">
                                 <span class="">
-                                    <img src="./assets/images/avatar-7.jpg" class="h-9 w-9 rounded-full" alt="" />
+                                    <img src="./assets/images/avatar-7.jpg" class="h-9 w-9 rounded-full" alt="imgimg">
                                 </span>
                                 <span>Stella Johnson</span></a>
                         </li>
@@ -1272,7 +1284,7 @@
                             <a href="#"
                                 class="flex items-center gap-x-4 text-lg font-semibold text-gray-600/90 dark:text-gray-200">
                                 <span class="">
-                                    <img src="./assets/images/avatar-6.jpg" class="h-9 w-9 rounded-full" alt="" />
+                                    <img src="./assets/images/avatar-6.jpg" class="h-9 w-9 rounded-full" alt="imgimg">
                                 </span>
                                 <span>Alex Dolgove</span></a>
                         </li>
@@ -1282,7 +1294,7 @@
                             <a href="#"
                                 class="flex items-center gap-x-4 text-lg font-semibold text-gray-600/90 dark:text-gray-200">
                                 <span class="active-status">
-                                    <img src="./assets/images/avatar-1.jpg" class="h-9 w-9 rounded-full" alt="" />
+                                    <img src="./assets/images/avatar-1.jpg" class="h-9 w-9 rounded-full" alt="imgimg">
                                 </span>
                                 <span>Dennis Han</span></a>
                         </li>
@@ -1290,7 +1302,7 @@
                             <a href="#"
                                 class="flex items-center gap-x-4 text-lg font-semibold text-gray-600/90 dark:text-gray-200">
                                 <span class="active-status">
-                                    <img src="./assets/images/avatar-2.jpg" class="h-9 w-9 rounded-full" alt="" />
+                                    <img src="./assets/images/avatar-2.jpg" class="h-9 w-9 rounded-full" alt="imgimg">
                                 </span>
                                 <span>Scofeild</span></a>
                         </li>
@@ -1298,7 +1310,7 @@
                             <a href="#"
                                 class="flex items-center gap-x-4 text-lg font-semibold text-gray-600/90 dark:text-gray-200">
                                 <span class="">
-                                    <img src="./assets/images/avatar-3.jpg" class="h-9 w-9 rounded-full" alt="" />
+                                    <img src="./assets/images/avatar-3.jpg" class="h-9 w-9 rounded-full" alt="imgimg">
                                 </span>
                                 <span>Sara Trencati</span></a>
                         </li>
@@ -1311,7 +1323,7 @@
     <!----------------- BIRTHDAY MODAL  ----------------->
     <div id="birthday-modal" class="z-20">
         <div id="birthday-modal-container"
-            class="invisible absolute -top-80 left-1/2 z-20 w-[600px] -translate-x-1/2 rounded-lg bg-white dark:bg-dark-foreground p-7 shadow-lg transition-all duration-700">
+            class="invisible absolute -top-80 left-1/2 z-20 w-[600px] -translate-x-1/2 rounded-lg bg-white p-7 shadow-lg transition-all duration-700 dark:bg-dark-foreground">
             <div class="mb-6 flex items-center justify-between">
                 <div class="flex items-center gap-x-4">
                     <span class="flex h-7 w-7 items-center justify-center rounded-full bg-amber-100"><i
@@ -1321,13 +1333,13 @@
                     </h1>
                 </div>
                 <button id="exit-birthday-modal"
-                    class="h-7 w-7 rounded-full bg-gray-100 text-gray-400 hover:text-gray-500 dark:text-gray-500 dark:hover:text-gray-400 dark:bg-gray-700">
+                    class="h-7 w-7 rounded-full bg-gray-100 text-gray-400 hover:text-gray-500 dark:bg-gray-700 dark:text-gray-500 dark:hover:text-gray-400">
                     <i class="fa-solid fa-xmark fa-lg"></i>
                 </button>
             </div>
             <div class="flex flex-col gap-y-7">
                 <div class="flex items-center gap-x-6">
-                    <img class="h-14 w-14 rounded-full" src="./assets/images/avatar-3.jpg" alt="" />
+                    <img class="h-14 w-14 rounded-full" src="./assets/images/avatar-3.jpg" alt="imgimg">
                     <div class="flex w-full flex-col gap-y-3">
                         <div class="flex items-center justify-between">
                             <h1 class="text-lg font-semibold text-gray-500 dark:text-gray-300">
@@ -1338,7 +1350,7 @@
                         <label class="relative block">
                             <input
                                 class="block w-full rounded-md border border-slate-300 bg-white py-2 pl-4 pr-12 text-gray-400 shadow-sm outline-none dark:border-gray-800 dark:bg-gray-800"
-                                placeholder="Write her on Timeline" type="text" name="search" />
+                                placeholder="Write her on Timeline" type="text" name="search">
                             <span class="absolute inset-y-0 right-4 flex items-center pl-2">
                                 <i class="fa-solid fa-face-smile fa-lg text-gray-600"></i>
                             </span>
@@ -1346,7 +1358,7 @@
                     </div>
                 </div>
                 <div class="flex items-center gap-x-6">
-                    <img class="h-14 w-14 rounded-full" src="./assets/images/avatar-2.jpg" alt="" />
+                    <img class="h-14 w-14 rounded-full" src="./assets/images/avatar-2.jpg" alt="img">
                     <div class="flex w-full flex-col gap-y-3">
                         <div class="flex items-center justify-between">
                             <h1 class="text-lg font-semibold text-gray-500 dark:text-gray-300">
@@ -1357,7 +1369,7 @@
                         <label class="relative block">
                             <input
                                 class="block w-full rounded-md border border-slate-300 bg-white py-2 pl-4 pr-12 text-gray-400 shadow-sm outline-none dark:border-gray-800 dark:bg-gray-800"
-                                placeholder="Write his on Timeline" type="text" name="search" />
+                                placeholder="Write his on Timeline" type="text" name="search">
                             <span class="absolute inset-y-0 right-4 flex items-center pl-2">
                                 <i class="fa-solid fa-face-smile fa-lg text-gray-600"></i>
                             </span>
