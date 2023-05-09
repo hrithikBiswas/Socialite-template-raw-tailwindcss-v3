@@ -2,9 +2,9 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
     <title>Socialite - Register</title>
 </head>
@@ -15,7 +15,7 @@
         <div class="bg-white px-4 py-3 shadow lg:py-4 dark:bg-dark-foreground">
             <div class="mx-auto flex max-w-6xl items-center justify-between">
                 <a class="" href="#">
-                    <img class="w-32" src="./assets/images/logo.png" alt="logo" />
+                    <img class="w-32" src="./assets/images/logo.png" alt="logo">
                 </a>
                 <div class="flex items-center gap-x-2 md:gap-x-5">
                     <button id="light-theme"
@@ -43,57 +43,56 @@
         <!-- REGISTER FORM -->
         <div class="p-6 dark:bg-dark-background">
             <div class="mx-auto max-w-lg rounded-md bg-white p-6 lg:p-10 shadow-lg dark:bg-dark-foreground">
-                <form action="" method="post" onsubmit="return false;">
+                <form method="post" onsubmit="return false;">
                     <h1 class="mb-6 text-xl font-bold text-gray-700 dark:text-gray-100">
                         Register
                     </h1>
                     <div class="grid lg:grid-cols-2 lg:gap-x-4">
                         <div class="mb-2.5 flex flex-col basis-1/2">
                             <label for="firstname" class="mb-2 text-gray-600/90 dark:text-gray-300">First Name</label>
-                            <input name="firstname"
+                            <input id="firstname" name="firstname"
                                 class="h-11 rounded-md bg-gray-100 px-5 outline-none dark:bg-gray-800 dark:text-gray-300"
-                                type="text" placeholder="Your Name" />
+                                type="text" placeholder="Your Name">
                         </div>
                         <div class="mb-2.5 flex flex-col basis-1/2">
                             <label for="lastname" class="mb-2 text-gray-600/90 dark:text-gray-300">Last Name</label>
-                            <input name="lastname"
+                            <input id="lastname" name="lastname"
                                 class="h-11 rounded-md bg-gray-100 px-5 outline-none dark:bg-gray-800 dark:text-gray-300"
-                                type="text" placeholder="Last Name" />
+                                type="text" placeholder="Last Name">
                         </div>
                     </div>
                     <div class="mb-2.5 flex flex-col">
                         <label for="username" class="mb-2 text-gray-600/90 dark:text-gray-300">Username</label>
-                        <input name="username"
+                        <input id="username" name="username"
                             class="h-11 rounded-md bg-gray-100 px-5 outline-none dark:bg-gray-800 dark:text-gray-300"
-                            type="text" placeholder="Username" />
+                            type="text" placeholder="Username">
                     </div>
                     <div class="mb-2.5 flex flex-col">
                         <label for="email" class="mb-2 text-gray-600/90 dark:text-gray-300">Email Address</label>
-                        <input name="email"
+                        <input id="email" name="email"
                             class="h-11 rounded-md bg-gray-100 px-5 outline-none dark:bg-gray-800 dark:text-gray-300"
-                            type="email" placeholder="info@exemple.com" />
+                            type="email" placeholder="info@exemple.com">
                     </div>
                     <div class="mb-2.5 flex flex-col">
                         <label for="password" class="mb-2 text-gray-600/90 dark:text-gray-300">Password</label>
-                        <input name="password"
+                        <input id="password" name="password"
                             class="h-11 rounded-md bg-gray-100 px-5 outline-none dark:bg-gray-800 dark:text-gray-300"
-                            type="password" placeholder="******" />
+                            type="password" placeholder="******">
                     </div>
                     <div class="grid lg:grid-cols-2 lg:gap-x-4">
                         <div class="mb-2.5 flex flex-col w-full">
                             <label for="gender" class="mb-2 text-gray-600/90 dark:text-gray-300">Gender</label>
-                            <select name="gender"
-                                class="h-11 w-full text-gray-600/90 rounded-md bg-gray-100 px-5 outline-none dark:bg-gray-800 dark:text-gray-300"
-                                id="">
+                            <select id="gender" name="gender"
+                                class="h-11 w-full text-gray-600/90 rounded-md bg-gray-100 px-5 outline-none dark:bg-gray-800 dark:text-gray-300">
                                 <option value="male">Male</option>
                                 <option value="female">Female</option>
                             </select>
                         </div>
                         <div class="mb-2.5 flex flex-col w-full">
                             <label for="phone" class="mb-2 text-gray-600/90 dark:text-gray-300">Phone: optional</label>
-                            <input type="number" name="phone"
+                            <input id="phone" type="number" name="phone"
                                 class="h-11 rounded-md bg-gray-100 px-5 outline-none appearance-none dark:bg-gray-800 dark:text-gray-300"
-                                placeholder="+88 01874400050" />
+                                placeholder="+88 01874400050">
                         </div>
                     </div>
                     <div class="mb-2 text-gray-600/90 flex gap-x-3 items-center dark:text-gray-300">
