@@ -8,8 +8,8 @@
     "license": "ISC",
     "scripts": {
         "clean": "rm dist/bundle.js",
-        "build-dev": "webpack serve",
-        "build-prod": "webpack"
+        "dev": "webpack serve",
+        "build": "webpack"
     },
     "dependencies": {
         "@fortawesome/fontawesome-free": "^6.4.0",
